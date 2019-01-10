@@ -19,20 +19,22 @@ server.get('/', (req, res) => {
 });
 
 /// CREATE COURSES ---------------------------
-server,post('/api/courses', (req,res) => {
+server.post('/api/courses', (req,res) => {
     /// grab the date from the body
-    const course = request.body;
-
-
+    const course = req.body;
 
     /// save data to the database
-    debug.unsert(course).into(courses)
-        .then()
-        .catch()
+    debug.insert(course).into('courses')
+        .then( ids => {
+            res,status(201).json(ids)
+        })
+        .catch( err => {
+            res.status(500).json(err);
+        });
 
 
     /// return the id of newly created record
-})
+});
 
 
 
