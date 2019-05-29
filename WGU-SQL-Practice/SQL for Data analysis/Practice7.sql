@@ -26,3 +26,16 @@ ORDER BY subject DESC;
 
 -- ORDER BY subject DESC
 -- WHERE winner = 1;
+
+-- For each subject show the number of prizes awarded in the year 2000.
+SELECT DISTINCT subject, COUNT(yr) FROM nobel 
+WHERE yr = '2000'
+GROUP BY subject;
+
+-- Show the number of different winners for each subject.
+SELECT DISTINCT subject, COUNT(DISTINCT winner) FROM nobel
+GROUP BY subject;
+
+-- For each subject show how many years have had prizes awarded.
+SELECT DISTINCT subject, COUNT(DISTINCT yr) FROM nobel
+GROUP BY subject;
