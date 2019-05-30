@@ -99,7 +99,53 @@ SELECT Name, Continent, Population FROM Country
     WHERE Continent IN ( 'Europe', 'Asia' );
     -- matche with any that is in Europe or asia
 
+
 -- Some basic reg ex implementation with MYSQL
 
 SELECT Name, Continent, Population FROM Country WHERE Name LIKE '_a%'
+    ORDER BY Name
+;
+
+
+SELECT Name, Continent, Population 
+    FROM Country 
+    WHERE 
+        Name LIKE '_a%' OR
+        Name LIKE '_b%' OR
+        Name LIKE '_c%' OR
+        Name LIKE '_d%'
+    ORDER BY Name;
+
+SELECT Name, Continent, Population 
+    FROM Country 
+    WHERE 
+        Name LIKE REGEXP '^.[a-d].*'
+    ORDER BY Name;
+
+
+SELECT Name, Continent, Population 
+    FROM Country 
+    WHERE 
+        Name LIKE REGEXP '^.[aeiou].*' -- character class
+    ORDER BY Name;
+
+
+SELECT Name, Continent, Population 
+    FROM Country 
+    WHERE 
+        Name LIKE REGEXP '^.[aeiou].*$'
+    ORDER BY Name;
+
+
+SELECT Name, Continent, Population 
+    FROM Country 
+    WHERE 
+        Name LIKE REGEXP 'o.o'
+    ORDER BY Name;
+
+
+SELECT Name, Continent, Population 
+    FROM Country 
+    WHERE 
+        Name LIKE REGEXP 'oc+o'
     ORDER BY Name;
