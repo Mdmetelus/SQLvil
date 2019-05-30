@@ -126,11 +126,26 @@ SELECT Name, Continent, Population
 SELECT Name, Continent, Population 
     FROM Country 
     WHERE 
-        Name LIKE REGEXP '^.[aeiou].*'
+        Name LIKE REGEXP '^.[aeiou].*' -- character class
     ORDER BY Name;
+
 
 SELECT Name, Continent, Population 
     FROM Country 
     WHERE 
         Name LIKE REGEXP '^.[aeiou].*$'
+    ORDER BY Name;
+
+
+SELECT Name, Continent, Population 
+    FROM Country 
+    WHERE 
+        Name LIKE REGEXP 'o.o'
+    ORDER BY Name;
+
+
+SELECT Name, Continent, Population 
+    FROM Country 
+    WHERE 
+        Name LIKE REGEXP 'oc+o'
     ORDER BY Name;
