@@ -98,3 +98,8 @@ SELECT Name, Continent, Population FROM Country
 SELECT Name, Continent, Population FROM Country
     WHERE Continent IN ( 'Europe', 'Asia' );
     -- matche with any that is in Europe or asia
+
+-- Some basic reg ex implementation with MYSQL
+
+SELECT Name, Continent, Population FROM Country WHERE Name LIKE '_a%'
+    ORDER BY Name;
