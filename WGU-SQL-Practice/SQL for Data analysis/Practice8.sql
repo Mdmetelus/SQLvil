@@ -97,4 +97,4 @@ SELECT Name, Continent, Population FROM Country
 
 SELECT Name, Continent, Population FROM Country
     WHERE Continent IN ( 'Europe', 'Asia' );
-    -- matche with any that begin with island
+    -- matche with any that is in Europe or asia
