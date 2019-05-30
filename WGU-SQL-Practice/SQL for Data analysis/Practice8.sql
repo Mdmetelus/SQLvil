@@ -50,3 +50,14 @@ SELECT Name, Code, Region, Population from Country ORDER BY Code;
 SELECT Name AS Country, Code AS ISO, Region, Population as Pop
     FROM Country ORDER BY Code;
 
+-- Order By variations
+
+SELECT Name from Country ORDER BY Name;
+
+SELECT Name from Country ORDER BY Name DESC;
+
+SELECT Name from Country ORDER BY Name ASC;
+
+SELECT Name, Continent from Country ORDER BY Continent, Name;
+
+SELECT Name, Continent, Region from Country ORDER BY Continent DESC, Region, Name;
