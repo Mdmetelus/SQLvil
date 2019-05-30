@@ -61,3 +61,45 @@ SELECT Name from Country ORDER BY Name ASC;
 SELECT Name, Continent from Country ORDER BY Continent, Name;
 
 SELECT Name, Continent, Region from Country ORDER BY Continent DESC, Region, Name;
+
+
+-- WHERE variations implimentation
+SELECT Name, Continent, Population FROM Country WHERE Population < 100000 ORDER BY Population DESC;
+
+SELECT Name, Continent, Population 
+    FROM Country 
+    WHERE Population < 100000 OR Population IS NULL 
+    ORDER BY Population DESC
+;
+
+SELECT Name, Continent, Population 
+    FROM Country 
+    WHERE Population < 100000 AND Continent = 'Oceania' 
+    ORDER BY Population DESC
+;
+
+SELECT Name, Continent, Population FROM Country
+    WHERE Name LIKE '%island%' ORDER BY Name; 
+    -- % allows you to match anything with what comes befor or after island.
+
+SELECT Name, Continent, Population FROM Country
+    WHERE Name LIKE '%island' ORDER BY Name;
+    -- matches with any that end with island
+
+SELECT Name, Continent, Population FROM Country
+    WHERE Name LIKE 'island%' ORDER BY Name;
+    -- matches with any that begin with island
+
+SELECT Name, Continent, Population FROM Country
+    WHERE Name LIKE '_a%' ORDER BY Name;
+    -- matche with any that has A as the second letter
+    -- and any number of letters after it.
+
+SELECT Name, Continent, Population FROM Country
+    WHERE Continent IN ( 'Europe', 'Asia' );
+    -- matche with any that is in Europe or asia
+
+-- Some basic reg ex implementation with MYSQL
+
+SELECT Name, Continent, Population FROM Country WHERE Name LIKE '_a%'
+    ORDER BY Name;
