@@ -19,6 +19,19 @@ SELECT Name, Population / 1000000 AS PopMM
     ORDER BY Population DESC;
 
 -- Select rows
+SELECT 'Hello, World';
+
+SELECT * FROM Country;
+
+SELECT * FROM Country ORDER BY Name;
+
+SELECT Name, LifeExpectancy FROM Country ORDER BY Name;
+
+SELECT Name AS 'The Name', LifeExpectancy AS 'This be Life Expectancy' 
+    FROM Country 
+    ORDER BY Name;
+
+SELECT COUNT(*) FROM Country ORDER BY Name;
 
 
 -- Select columns
