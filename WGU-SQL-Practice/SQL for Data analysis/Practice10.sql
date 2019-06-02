@@ -7,3 +7,6 @@ SELECT * FROM test;
 
 UPDATE test SET c = 'Even funnier.' WHERE a = 2;
 SELECT * FROM test;
+
+UPDATE test SET c = NULL WHERE a = 2;
+SELECT * FROM test;
