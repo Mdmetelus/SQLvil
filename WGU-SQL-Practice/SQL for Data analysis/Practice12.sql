@@ -20,5 +20,12 @@ CREATE TABLE test (
     address VARCHAR(255),
     city VARCHAR(255),
     state CHAR (2),
-    zip CHAR(10)
+    zip CHAR(10) -- no comma here ever!!!
 );
+
+DESCRIBE test;
+-- this gives a definition of the test table and its rows as the output
+
+SHOW TABLE STATUS; -- Shows all the tables in the database.
+
+SHOW TABLE STATUS LIKE 'test'; -- Shows the specific mentioned table.
