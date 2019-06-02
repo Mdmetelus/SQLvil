@@ -19,3 +19,9 @@ SELECT * FROM test; -- row deleted;
 
 SELECT * FROM test WHERE a = 1; -- selects only the one row
 SELECT * FROM test;
+
+DELETE FROM test WHERE a = 1;
+SELECT * FROM test;
+
+DELETE FROM test; -- all the rows will be deleted if you remove te WHERE clause
+SELECT * FROM test;
