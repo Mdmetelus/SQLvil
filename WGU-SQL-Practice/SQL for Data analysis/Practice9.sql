@@ -4,4 +4,4 @@ SELECT * FROM test;
 
 
 INSERT INTO test ( b, c ) VALUES ( 'That', 'Over there!' )
-SELECT * FROM test
+SELECT * FROM test;
