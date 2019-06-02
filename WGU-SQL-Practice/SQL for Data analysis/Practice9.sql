@@ -5,3 +5,4 @@ SELECT * FROM test;
 
 INSERT INTO test ( b, c ) VALUES ( 'That', 'Over there!' )
 SELECT * FROM test;
+-- there will be a null in the  a column.
