@@ -14,3 +14,13 @@ SELECT * FROM test WHERE a IS NOT NULL; -- thi gives you avery row inthe table w
 DELETE FORM test; -- entire row deleted
 
 INSERT INTO test ( a, b, c ) VALUES ( 0, NULL, '' );
+
+SELECT * FROM test WHERE b = ''; -- EMPTY REPLY
+
+SELECT * FROM test WHERE b IS NULL; -- non-empty reply (returns the row)
+
+SELECT * FROM test WHERE c IS NULL; -- empty reply
+
+SELECT * FROM test WHERE c IS NOT NULL; -- non-empty reply (returns the row)
+
+DROP TABLE test;
