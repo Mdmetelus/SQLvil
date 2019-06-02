@@ -28,3 +28,12 @@ SELECT * FROM test;
 
 
 DROP TABLE test; -- to delete the entire dable use the drop command
+
+
+
+SELECT 'hello, world';
+
+SELECT 'hello' ', ' 'world'; -- only works in mysql not in other database systems
+SELECT "hello, world"; -- only works in mysql not in other database systems
+
+SELECT 'hello, ''world'''; -- this will work in all systems
