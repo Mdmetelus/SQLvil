@@ -25,3 +25,6 @@ SELECT * FROM test;
 
 DELETE FROM test; -- all the rows will be deleted if you remove te WHERE clause
 SELECT * FROM test;
+
+
+DROP TABLE test; -- to delete the entire dable use the drop command
