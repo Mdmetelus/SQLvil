@@ -42,7 +42,11 @@ CREATE TABLE test (
     city VARCHAR(255),
     state CHAR (2),
     zip CHAR(10) -- no comma here ever!!!
-) ENGINE = Innodb DEFAULT CHARSET=utf8;
+) ENGINE = Innodb DEFAULT CHARSET=utf8; -- know the default character set is utf8
 
---know the default character set is utf8
 SHOW CREATE TABLE test;
+
+SHOW TABLE STATUS;
+
+DROP TABLE IF EXISTS test; -- removed the table
+
