@@ -29,3 +29,20 @@ DESCRIBE test;
 SHOW TABLE STATUS; -- Shows all the tables in the database.
 
 SHOW TABLE STATUS LIKE 'test'; -- Shows the specific mentioned table.
+
+SHOW CREATE TABLE test;
+
+DROP TABLE IF EXISTS test; -- remove the old table version if its in the database
+
+
+CREATE TABLE test (
+    id INTEGER,
+    name VARCHAR(255),
+    address VARCHAR(255),
+    city VARCHAR(255),
+    state CHAR (2),
+    zip CHAR(10) -- no comma here ever!!!
+) ENGINE = Innodb DEFAULT CHARSET=utf8;
+
+--know the default character set is utf8
+SHOW CREATE TABLE test;
