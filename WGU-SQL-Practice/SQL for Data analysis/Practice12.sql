@@ -84,6 +84,8 @@ SELECT * FROM test;
 DESCRIBE test;
 SHOW INDEXES FROM test;
 
-DROP INDEX MaxABIndex ON test;
+DROP INDEX MaxABIndex ON test; -- index removed
 DESCRIBE test;
 SHOW INDEXES FROM test;
+
+DROP TABLE IF EXISTS test;
