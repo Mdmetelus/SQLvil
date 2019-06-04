@@ -50,3 +50,14 @@ SHOW TABLE STATUS;
 
 DROP TABLE IF EXISTS test; -- removed the table
 
+CREATE TABLE test (
+    id INTEGER,
+    a VARCHAR(255),
+    b VARCHAR(255)
+);
+INSERT INTO test ( id, a, b ) VALUES ( 1, 'one', 'two' );
+INSERT INTO test ( id, a, b ) VALUES ( 2, 'two', 'three');
+INSERT INTO test ( id, a, b ) VALUES ( 3, 'three', 'four');
+SELECT * FROM test;
+DESCRIBE test;
+SHOW INDEXES FROM test;
