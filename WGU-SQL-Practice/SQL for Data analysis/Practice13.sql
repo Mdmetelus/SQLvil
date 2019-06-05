@@ -25,8 +25,13 @@ CREATE TABLE test1 (
     b INTEGER NOT NULL,
     c INTEGER,
     d VARCHAR(255),
-    e VARCHAR(255) UNIQUE -- creates an index to enforse uniqueness
+    e VARCHAR(255) UNIQUE, -- creates an index to enforse uniqueness
+    -- you cant duplicate this(unique) row.
+    f VARCHAR(255) UNIQUE NOT NULL
 );
 INSERT INTO test ( b ) VALUE ( 'one');
 DESCRIBE test;
 SELECT * FROM test;
+
+DROP TABLE IF EXISTS test1;
+
