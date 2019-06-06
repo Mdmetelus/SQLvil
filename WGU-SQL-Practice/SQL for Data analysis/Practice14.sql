@@ -4,3 +4,5 @@ CREATE TABLE newtable(
     a VARCHAR(255),
     b VARCHAR(255)
 );
+
+INSERT INTO test ( a, b ) VALUES ( 'NEW VALUE', 'NEW VALUE 2' );
