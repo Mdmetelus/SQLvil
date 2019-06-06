@@ -35,3 +35,17 @@ SELECT * FROM test;
 
 DROP TABLE IF EXISTS test1;
 
+CREATE TABLE test(
+    id INTEGER,
+    a VARCHAR(255),
+    b VARCHAR(255)
+);
+
+INSERT INTO test ( id, a, b ) VALUES ( 1, 'one', 'two' );
+INSERT INTO test ( id, a, b ) VALUES ( 2 ,'two', 'three' );
+INSERT INTO test ( id, a, b ) VALUES ( 3, 'three', 'four' );
+SELECT * FROM test;
+DESCRIBE test;
+SHOW TABLE STATUS like 'test';
+SHOW CREATE TABLE test;
+SHOW INDEXES FROM test;
