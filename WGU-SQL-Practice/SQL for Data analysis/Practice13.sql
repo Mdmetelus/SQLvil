@@ -46,6 +46,11 @@ INSERT INTO test ( id, a, b ) VALUES ( 2 ,'two', 'three' );
 INSERT INTO test ( id, a, b ) VALUES ( 3, 'three', 'four' );
 SELECT * FROM test;
 DESCRIBE test;
+
 SHOW TABLE STATUS like 'test';
+
 SHOW CREATE TABLE test;
+
 SHOW INDEXES FROM test;
+
+DROP TABLE IF EXISTS test;
