@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS test;
 CREATE TABLE newtable(
-    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    id INTEGER AUTO_INCREMENT PRIMARY KEY, -- id SERIAL means the same but takes up more space.
     a VARCHAR(255),
     b VARCHAR(255)
 );
