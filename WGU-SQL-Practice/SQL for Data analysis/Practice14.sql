@@ -6,3 +6,6 @@ CREATE TABLE newtable(
 );
 
 INSERT INTO test ( a, b ) VALUES ( 'NEW VALUE', 'NEW VALUE 2' );
+
+-- serial  shorthand for :
+-- big int, unsigned, not null, auto increment, unique;
