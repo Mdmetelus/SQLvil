@@ -1,1 +1,7 @@
-DROP TABLE IF EXISTS test;
+DROP TABLE IF EXISTS lend;
+DROP TABLE IF EXISTS client;
+DROP TABLE IF EXISTS books;
+
+CREATE TABLE client (
+    id
+);
