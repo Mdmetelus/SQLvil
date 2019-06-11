@@ -3,5 +3,7 @@ DROP TABLE IF EXISTS client;
 DROP TABLE IF EXISTS books;
 
 CREATE TABLE client (
-    id
-);
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name TEXT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
