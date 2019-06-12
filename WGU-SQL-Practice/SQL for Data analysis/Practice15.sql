@@ -33,3 +33,12 @@ INSERT INTO lend ( c_id, b_id ) VALUES ( 1, 1 );
 INSERT INTO lend ( c_id, b_id ) VALUES ( 1, 2 );
 INSERT INTO lend ( c_id, b_id ) VALUES ( 3, 3 );
 INSERT INTO lend ( c_id, b_id ) VALUES ( 2, 5 );
+
+SELECT * FROM lend;
+
+SELECT l.id, l.stamp, c.name, b.title
+    FROM lend AS l
+    LEFT JOIN client AS c ON l.c_id = c.id
+    LEFT JOIN book AS b ON l.b_id = b.id
+
+    
