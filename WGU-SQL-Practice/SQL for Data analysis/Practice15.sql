@@ -26,7 +26,10 @@ CREATE TABLE lend (
     id INT AUTO_INCREMENT PRIMARY KEY,
     stamp TIMESTAMP,
     c_id INT,
-    b_id INT
+    b_id INT,
+    FOREIGN KEY (c_id) REFERENCES client(id),
+    FOREIGN KEY (b_id) REFERENCES book(id)
+
 );
 
 INSERT INTO lend ( c_id, b_id ) VALUES ( 1, 1 );
@@ -41,4 +44,3 @@ SELECT l.id, l.stamp, c.name, b.title
     LEFT JOIN client AS c ON l.c_id = c.id
     LEFT JOIN book AS b ON l.b_id = b.id
 
-    
