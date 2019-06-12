@@ -22,3 +22,14 @@ INSERT INTO book ( title ) VALUES ( 'Rendezvous with Rama' );
 INSERT INTO book ( title ) VALUES ( 'A Game of Thrones' );
 SELECT * FROM book;
 
+CREATE TABLE lend (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    stamp TIMESTAMP,
+    c_id INT,
+    b_id INT
+);
+
+INSERT INTO lend ( c_id, b_id ) VALUES ( 1, 1 );
+INSERT INTO lend ( c_id, b_id ) VALUES ( 1, 2 );
+INSERT INTO lend ( c_id, b_id ) VALUES ( 3, 3 );
+INSERT INTO lend ( c_id, b_id ) VALUES ( 2, 5 );
