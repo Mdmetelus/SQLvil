@@ -35,9 +35,11 @@ CREATE TABLE lend (
 INSERT INTO lend ( c_id, b_id ) VALUES ( 1, 1 );
 INSERT INTO lend ( c_id, b_id ) VALUES ( 1, 2 );
 INSERT INTO lend ( c_id, b_id ) VALUES ( 3, 3 );
-INSERT INTO lend ( c_id, b_id ) VALUES ( 2, 5 );
+-- INSERT INTO lend ( c_id, b_id ) VALUES ( 2, 5 );
 
 SELECT * FROM lend;
+
+DELTETE FROM book WHERE id = 2; -- this sttement will not be allowed because of the foriegn key constraint.
 
 SELECT l.id, l.stamp, c.name, b.title
     FROM lend AS l
