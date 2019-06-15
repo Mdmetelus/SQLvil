@@ -7,7 +7,7 @@ CREATE TABLE newtable(
 
 INSERT INTO test ( a, b ) VALUES ( 'NEW VALUE', 'NEW VALUE 2' );
 
--- serial  shorthand for :
+-- serial  short hand for :
 -- big int, unsigned, not null, auto increment, unique;
 
 DROP TABLE IF EXISTS newtable;
