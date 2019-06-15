@@ -17,4 +17,7 @@ CREATE TABLE newtable(
     a VARCHAR(255),
     b VARCHAR(255),
     timeOfEvent  TIMESTAMP DEFAULT NOW(),
+    idNumber INT(11) NOT NULL,
+    firstName VARCHAR(255) NOT NULL,
+    lastName VARCHAR(255) NOT NULL
 );
