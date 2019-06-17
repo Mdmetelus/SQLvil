@@ -24,4 +24,4 @@ CREATE TABLE newtable(
 
 SHOW CREATE TABLE newtable;
 
-SELECT * FROM test;
+SELECT * FROM newtable;
