@@ -21,3 +21,5 @@ CREATE TABLE newtable(
     firstName VARCHAR(255) NOT NULL,
     lastName VARCHAR(255) NOT NULL
 );
+
+SHOW CREATE TABLE newtable;
