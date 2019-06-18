@@ -25,3 +25,7 @@ CREATE TABLE newtable(
 SHOW CREATE TABLE newtable;
 
 SELECT * FROM newtable;
+
+ALTER TABLE newtable DROP a;
+
+SELECT * FROM newtable;
