@@ -8,5 +8,6 @@ CREATE TABLE widgetSales (
     id SERIAL,
     inv_id INTEGER,
     quan INTEGER,
-    
-)
+    price INTEGER
+
+);
