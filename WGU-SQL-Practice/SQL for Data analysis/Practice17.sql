@@ -1,4 +1,4 @@
-CREATE TABLE wigetInventory (
+CREATE TABLE widgetInventory (
     id SERIAL,
     description VARCHAR(255),
     onhand INTEGER NOT NULL
@@ -24,4 +24,8 @@ UPDATE widgetInventory SET onhand = ( onhand - 5 ) WHERE id = 1;
 COMMIT;
 
 
-
+START TRANSACTION;
+INSERT INTO widgetInventory ( description, onhand ) VALUES ( 'toy', 25 );
+ROLLBACK;
+SELECT * FROM wigetInventory;
+SELECT * FROM widgetInventory
