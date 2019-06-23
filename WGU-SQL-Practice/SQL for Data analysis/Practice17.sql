@@ -11,3 +11,5 @@ CREATE TABLE widgetSales (
     price INTEGER
 
 );
+
+INSERT INTO ()
