@@ -3,3 +3,7 @@ CREATE TABLE wigetInventory (
     description VARCHAR(255),
     onhand INTEGER NOT NULL
 );
+
+CREATE TABLE widgetSales (
+    id SERIAL,
+)
