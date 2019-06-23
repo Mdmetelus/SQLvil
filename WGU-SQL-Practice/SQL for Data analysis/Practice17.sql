@@ -12,4 +12,8 @@ CREATE TABLE widgetSales (
 
 );
 
-INSERT INTO ()
+INSERT INTO widgetInventory ( description, onhand ) VALUES ( 'rock', 25 );
+INSERT INTO widgetInventory ( description, onhand ) VALUES ( 'paper', 25 );
+INSERT INTO widgetInventory ( description, onhand ) VALUES ( 'scissors', 25 );
+
+SELECT * FROM widgetInventory;

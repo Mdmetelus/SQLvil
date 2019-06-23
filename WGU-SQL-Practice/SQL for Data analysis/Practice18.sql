@@ -11,3 +11,4 @@ SELECT Continent, COUNT(*) AS Count FROM Country GROUP BY Continent ORDER BY Cou
 -- list the continents and te country count for each continent from the most to the least number of countries.
 
 SELECT COUNT(DISTINCT Continent) FROM Country;
+
