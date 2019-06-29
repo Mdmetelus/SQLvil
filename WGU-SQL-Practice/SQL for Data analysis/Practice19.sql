@@ -15,3 +15,5 @@ USE mysql;
 SHOW COLOMNS FROM SCHEMATA;
 
 SHOW COLOMNS FROM informaton_schema.SCHEMATA;
+
+SHOW COLOMNS FROM mysql.help_topics;
