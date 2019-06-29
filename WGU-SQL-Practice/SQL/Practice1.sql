@@ -32,10 +32,16 @@ SELECT ID, LastName FROM customers LIMIT 20;
 
 SELECT name FROM students LIMIT 7;
 
-SELECT ID, FirstName, LastName, City From customers LIMIT 3, 4;
+SELECT ID, FirstName, LastName, City FROM customers LIMIT 3, 4;
 
-SELECT ID, FirstName, LastName, City From customers LIMIT 10, 20;
+SELECT ID, FirstName, LastName, City FROM customers LIMIT 10, 20;
 
-SELECT ID, FirstName, LastName, City From cutomers LIMIT 7, 3;
+SELECT ID, FirstName, LastName, City FROM cutomers LIMIT 7, 3;
 
 SELECT id, name FROM customers LIMIT 4, 12;
+
+SELECT City FROM customers;
+
+SELECT customers.City FROM customers;
+
+SELECT customers.address FROM customers;
