@@ -28,4 +28,4 @@ START TRANSACTION;
 INSERT INTO widgetInventory ( description, onhand ) VALUES ( 'toy', 25 );
 ROLLBACK;
 SELECT * FROM wigetInventory;
-SELECT * FROM widgetInventory
+SELECT * FROM widgetInventory;
