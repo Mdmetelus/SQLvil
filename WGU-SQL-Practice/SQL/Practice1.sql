@@ -24,3 +24,11 @@ SELECT DISTINCT City FROM customers;
 
 SELECT DISTINCT LastName FROM families;
 
+SELECT DISTINCT state FROM customers;
+
+SELECT ID, FirstName, LastName, City FROM  customers LIMIT 5;
+
+SELECT ID, LastName FROM customers LIMIT 20;
+
+SELECT name FROM students LIMIT 7;
+
