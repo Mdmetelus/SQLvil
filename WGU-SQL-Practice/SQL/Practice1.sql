@@ -14,4 +14,13 @@ SELECT City FROM customers;
 
 SELECT FirstName, LastName, City FROM customers;
 
-SELECT name, city From people;
+SELECT name, city FROM people;
+
+SELECT * FROM customers;
+
+SELECT * FROM students;
+
+SELECT DISTINCT City FROM customers;
+
+SELECT DISTINCT LastName FROM families;
+
