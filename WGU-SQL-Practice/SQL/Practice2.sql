@@ -31,5 +31,10 @@ SELECT * FROM customers WHERE state = 'NY' AND (city = 'Queens' OR city = 'Brook
 
 SELECT * FROM customers WHERE City = 'New York' OR City = 'Chicago';
 
+SELECT name, state, city FROM customers WHERE state = 'CA' OR city = 'Boston';
 
+SELECT * FROM customers WHERE City = 'New York' AND (Age=30 OR Age=35);
 
+SELECT * FROM customers WHERE (id = 1 OR id = 2) AND city = 'Boston';
+
+-- in Operator, and in, not in statments
