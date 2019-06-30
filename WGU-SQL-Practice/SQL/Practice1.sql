@@ -51,3 +51,9 @@ SELECT * FROM customers ORDER BY FirstName;
 SELECT name, city FROM people ORDER BY id;
 
 SELECT * FROM customers ORDER BY LastName, Age;
+
+SELECT name, state, address FROM customers ORDER BY name, state;
+
+SHOW TABLES;
+
+SELECT DISTINCT name FROM students ORDER BY name;
