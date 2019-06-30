@@ -45,3 +45,9 @@ SELECT City FROM customers;
 SELECT customers.City FROM customers;
 
 SELECT customers.address FROM customers;
+
+SELECT * FROM customers ORDER BY FirstName;
+
+SELECT name, city FROM people ORDER BY id;
+
+SELECT * FROM customers ORDER BY LastName, Age;
