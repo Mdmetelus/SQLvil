@@ -26,3 +26,16 @@ ON  table_one.colomn_one = table_two.colomn_one;
 SELECT students.name, universities.name 
 FROM students, universities
 WHERE stuents.university_id = universities.id;
+
+SELECT table1.colomn1, table2. colomn11
+FROM table1 LEFT OUTER JOIN table2
+ON table1.colomn_name = table2.colomn_name;
+
+SELECT customers.Name, items.Name
+FROM customers LEFT OUTER JOIN items
+ON customers.ID = items.seller_id;
+
+SELECT customer.name, items.name 
+FROM customers LEFT OUTER JOIN items 
+ON customer.id = items.seller_id;
+
