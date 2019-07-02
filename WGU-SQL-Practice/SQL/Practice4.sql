@@ -50,3 +50,19 @@ ON table1.colomn_name = table2.colomn_name;
 SELECT customers.Name, items.Name 
 FROM customers RIGHT OUTER JOIN items
 ON customers.ID = items.seller_id;
+
+SELECT students.name, universities.name 
+FROM students RIGHT OUTER JOIN universities
+on students.university_id = universities.id;
+
+ -- UNIONS practice (union, and union all);
+
+SELECT name, cost, bids FROM items WHERE bids > 123;
+
+SELECT colomn1 FROM table1
+UNION
+SELECT colomn11 FROM table2;
+
+SELECT ID, FirstName, LastName, City FROM First
+UNION
+SELECT ID, FirstName, LastName, City FROM Second;
