@@ -46,3 +46,11 @@ SELECT * FROM users WHERE state = 'NY' or state = 'CA';
 SELECT * FROM customers WHERE City IN ('New York', 'Los Angeles', 'Chicago');
 
 SELECT name, state FROM customers WHERE state IN ('CA','NC','NY');
+
+SELECT * FROM customers WHERE City NOT IN ('New York', 'Los Angeles', 'Chicago');
+
+SELECT name, state FROM customers WHERE state NOT IN ('CA', 'NY');
+
+-- Custom Colomns
+
+SELECT CONCAT(FirstName,',',City) FROM customers;
