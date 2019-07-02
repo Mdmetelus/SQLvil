@@ -39,3 +39,14 @@ SELECT customer.name, items.name
 FROM customers LEFT OUTER JOIN items 
 ON customer.id = items.seller_id;
 
+SELECT customers.name, items.name 
+FROM customers LEFT OUTER JOIN items
+ON customers.id = seller_id;
+
+SELECT table1.colomn1, table2.colomn11
+FROM table1 RIGHT OUTER JOIN table2
+ON table1.colomn_name = table2.colomn_name;
+
+SELECT customers.Name, items.Name 
+FROM customers RIGHT OUTER JOIN items
+ON customers.ID = items.seller_id;
