@@ -14,3 +14,12 @@ SET Salary = 5000, FirstName = 'Robert' WHERE ID = 1;
 
 UPDATE students SET name = 'Peter', age = 32 WHERE id = 147;
 
+ -- Deleting...
+ 
+DELETE FROM table_name WHERE condition IS NOT NULL;
+
+DELETE FROM Employees WHERE ID = 1;
+
+DELETE FROM people WHERE id > 5 AND id < 10;
+
+ -- Creating a new table practice;
