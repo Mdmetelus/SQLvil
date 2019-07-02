@@ -54,3 +54,14 @@ SELECT name, state FROM customers WHERE state NOT IN ('CA', 'NY');
 -- Custom Colomns
 
 SELECT CONCAT(FirstName,',',City) FROM customers;
+
+SELECT CONCAT(FirstName,',',City) AS new_column FROM customers;
+
+SELECT CONCAT(Latitiude,',',Longitude) AS Lat_Long FROM location_table;
+
+SELECT ID, FirstName, LastName Salary FROM employees;
+
+SELECT ID, FirstName, LastName Salary+500 AS Salary FROM employees;
+
+SELECT CONCAT (city,',',state) AS new_address FROM customers;
+
