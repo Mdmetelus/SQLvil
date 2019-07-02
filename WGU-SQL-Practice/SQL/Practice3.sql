@@ -49,7 +49,3 @@ SELECT * FROM students WHERE university = 'MIT';
 SELECT name, university FROM students WHERE university IN ('Stanford', 'MIT') ORDER BY  university;
 
 SELECT name, age FROM students WHERE age > (SELECT AVG(age) FROM students);
-
- -- Join Table practice
-
-SELECT id FROM students ORDER BY id DESC;
