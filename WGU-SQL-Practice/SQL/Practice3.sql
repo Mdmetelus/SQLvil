@@ -35,3 +35,11 @@ SELECT * FROM items WHERE cost > (SELECT AVG(cost) FROM items) ORDER BY Salary A
  SELECT * FROM employees WHERE FirstName LIKE 'A%';
 
  SELECT * FROM employees WHERE LastName LIKE '%s';
+
+ SELECT seller_id FROM Items WHERE name LIKE '%boxes';
+
+ SELECT MIN(Salary) AS Salary FROM employees;
+
+ SELECT name, MIN(cost)From items WHERE name LIKE '%boxes  of frogs' AND seller_id IN(68, 6, 18);
+
+  --
