@@ -41,4 +41,8 @@ SELECT * FROM customers WHERE (id = 1 OR id = 2) AND city = 'Boston';
 
 SELECT * FROM customers WHERE City = 'New York' OR City = 'Los Angeles' OR City = 'Chicago';
 
-SELECT * FROM users WHERE
+SELECT * FROM users WHERE state = 'NY' or state = 'CA';
+
+SELECT * FROM customers WHERE City IN ('New York', 'Los Angeles', 'Chicago');
+
+SELECT name, state FROM customers WHERE state IN ('CA','NC','NY');
