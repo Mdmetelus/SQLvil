@@ -78,3 +78,16 @@ SELECT FirstName, LastName, NULL FROM otherContacts;
 SELECT ID, FirstName, LastName, City FROM First1
 UNION ALL
 SELECT ID, FirstName, LastName, City FROM Second1;
+
+ -- Insert Statment practice
+
+INSERT INTO table_Name Values (value1, value2, value3);
+
+INSERT INTO Employees VALUES (8, 'Anthony', 'Young', 35);
+
+INSERT INTO students Values('John Sminth', 'MIT');
+
+INSERT INTO table_name(Column1, colomn2, colomn3, colomnN) Values (value1, value2, value3, valueN);
+
+Insert INTO Employees (ID, FirstName, LastName, Age) VALUES (8, 'Anthony', 'Young', 35);
+
