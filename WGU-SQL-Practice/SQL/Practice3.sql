@@ -30,22 +30,26 @@ SELECT * FROM items WHERE cost > (SELECT AVG(cost) FROM items) ORDER BY Salary A
 
  -- Like Operator 
 
- SELECT colomn_one FROM table_one WHERE colomn_one LIKE '_a%';
+SELECT colomn_one FROM table_one WHERE colomn_one LIKE '_a%';
 
- SELECT * FROM employees WHERE FirstName LIKE 'A%';
+SELECT * FROM employees WHERE FirstName LIKE 'A%';
 
- SELECT * FROM employees WHERE LastName LIKE '%s';
+SELECT * FROM employees WHERE LastName LIKE '%s';
 
- SELECT seller_id FROM Items WHERE name LIKE '%boxes';
+SELECT seller_id FROM Items WHERE name LIKE '%boxes';
 
- SELECT MIN(Salary) AS Salary FROM employees;
+SELECT MIN(Salary) AS Salary FROM employees;
 
- SELECT name, MIN(cost)From items WHERE name LIKE '%boxes  of frogs' AND seller_id IN(68, 6, 18);
+SELECT name, MIN(cost)From items WHERE name LIKE '%boxes  of frogs' AND seller_id IN (68, 6, 18);
 
-  --
+  -- uni practice
 
-  SELECT * FROM students WHERE university = 'MIT';
+SELECT * FROM students WHERE university = 'MIT';
 
-  SELECT name, university From students WHERE university IN ('Stanford', 'MIT') ORDER BY  university;
+SELECT name, university FROM students WHERE university IN ('Stanford', 'MIT') ORDER BY  university;
 
-  SELECT name, age FROM students WHERE age > (SELECT AVG(age) FROM students);
+SELECT name, age FROM students WHERE age > (SELECT AVG(age) FROM students);
+
+ -- Join Table practice
+
+SELECT id FROM students ORDER BY id DESC;
