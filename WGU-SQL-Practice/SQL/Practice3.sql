@@ -9,3 +9,7 @@ SELECT Salary, SQRT(Salary) AS Squared_Salary FROM employees;
 SELECT AVG(Salary) FROM employees;
 
 SELECT AVG(Salary) As avg_salary FROM employees;
+
+SELECT AVG(cost) FROM items;
+
+SELECT SUM(Salary) FROM employees;
