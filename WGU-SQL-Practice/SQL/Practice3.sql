@@ -43,3 +43,9 @@ SELECT * FROM items WHERE cost > (SELECT AVG(cost) FROM items) ORDER BY Salary A
  SELECT name, MIN(cost)From items WHERE name LIKE '%boxes  of frogs' AND seller_id IN(68, 6, 18);
 
   --
+
+  SELECT * FROM students WHERE university = 'MIT';
+
+  SELECT name, university From students WHERE university IN ('Stanford', 'MIT') ORDER BY  university;
+
+  SELECT name, age FROM students WHERE age > (SELECT AVG(age) FROM students);
