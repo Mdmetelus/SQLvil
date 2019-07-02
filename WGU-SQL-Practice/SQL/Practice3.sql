@@ -23,3 +23,9 @@ SELECT FirstName, Salary FROM employees WHERE Salary > 3100 ORDER BY Salary DESC
 SELECT LastName, FirstName, Salary FROM employees WHERE Salary > 1000 ORDER BY Salary, LastName, FirstName DESC;
 
 SELECT * FROM items WHERE cost > 463 ORDER BY cost DESC;
+
+SELECT FirstName, Salary FROM employees WHERE Salary > (SELECT AVG(Salary) FROM employees) ORDER BY Salary DESC;
+
+SELECT * FROM items WHERE cost > (SELECT AVG(cost) FROM items) ORDER BY Salary ASC;
+
+ -- 
