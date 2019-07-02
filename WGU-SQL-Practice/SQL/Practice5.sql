@@ -24,11 +24,12 @@ DELETE FROM people WHERE id > 5 AND id < 10;
 
  -- Creating a new table practice;
 
-CREATE TABLE;
+CREATE TABLE tests;
 
-CREATE TABLE (
+CREATE TABLE tests1(
     ID serial,
-    some_column varchar (50)
+    some_column varchar(50),
+    PRIMARY KEY(ID)
     
 ) 
 
@@ -45,5 +46,22 @@ CREATE TABLE users
     UserID int,
     FirstName varchar(100),
     LastName varchar(100),
-    City varchar(100)
+    City varchar(100),
+    PRIMARY KEY(UserID)
 )
+
+CREATE TABLE test (
+    id int,
+    username varchar(30),
+    password varchar(20),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE tests2(
+    ID serial,
+    some_column varchar(50),
+    name varchar(100) NOT NULL,
+    nickname varchar(50) UNIQUE,
+    PRIMARY KEY(ID)
+    
+);
