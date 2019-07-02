@@ -91,3 +91,7 @@ INSERT INTO table_name(Column1, colomn2, colomn3, colomnN) Values (value1, value
 
 Insert INTO Employees (ID, FirstName, LastName, Age) VALUES (8, 'Anthony', 'Young', 35);
 
+INSERT INTO students (name, university) VALUES ('Peter Parker', 'Stamford');
+
+INSERT INTO Employees (ID, FirstName, LastName) Values (9, 'Samuel','Clark');
+
