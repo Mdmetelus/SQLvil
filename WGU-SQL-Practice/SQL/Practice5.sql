@@ -57,6 +57,9 @@ CREATE TABLE test (
     PRIMARY KEY(id)
 );
 
+
+ -- NOT NULL and AUTO_INCREMENT practice with creating Tables;
+
 CREATE TABLE tests2(
     ID serial,
     some_column varchar(50),
@@ -64,4 +67,26 @@ CREATE TABLE tests2(
     nickname varchar(50) UNIQUE,
     PRIMARY KEY(ID)
     
+);
+
+CREATE TABLE tests3(
+    UserID int NOT NULL AUTO_INCREMENT,
+    username varchar(50) NOT NULL,
+    PRIMARY KEY(UserID)
+    
+);
+
+CREATE TABLE tests4(
+    id int NOT NULL AUTO_INCREMENT,
+    username varchar(50) NOT NULL,
+    PRIMARY KEY(UserID)
+    
+);
+
+CREATE TABLE Users (
+    id int NOT NULL AUTO_INCREMENT,
+    username varchar(35) NOT NULL,
+    password varchar(10) NOT NULL,
+    PRIMARY KEY(id)
+
 );
