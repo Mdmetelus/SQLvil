@@ -28,4 +28,10 @@ SELECT FirstName, Salary FROM employees WHERE Salary > (SELECT AVG(Salary) FROM 
 
 SELECT * FROM items WHERE cost > (SELECT AVG(cost) FROM items) ORDER BY Salary ASC;
 
- -- 
+ -- Like Operator 
+
+ SELECT colomn_one FROM table_one WHERE colomn_one LIKE '_a%';
+
+ SELECT * FROM employees WHERE FirstName LIKE 'A%';
+
+ SELECT * FROM employees WHERE LastName LIKE '%s';
