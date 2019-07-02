@@ -63,6 +63,18 @@ SELECT colomn1 FROM table1
 UNION
 SELECT colomn11 FROM table2;
 
-SELECT ID, FirstName, LastName, City FROM First
+SELECT ID, FirstName, LastName, City FROM Firsts
 UNION
-SELECT ID, FirstName, LastName, City FROM Second;
+SELECT ID, FirstName, LastName, City FROM Seconds;
+
+SELECT FirstName, LastName, Company FROM businessContacts
+UNION
+SELECT FirstName, LastName, Company FROM businessContacts2;
+
+SELECT FirstName, LastName, Company FROM businessContacts
+UNION
+SELECT FirstName, LastName, NULL FROM otherContacts;
+
+SELECT ID, FirstName, LastName, City FROM First1
+UNION ALL
+SELECT ID, FirstName, LastName, City FROM Second1;
