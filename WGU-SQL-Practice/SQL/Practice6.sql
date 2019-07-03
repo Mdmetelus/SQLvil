@@ -39,7 +39,7 @@ WHERE mark > 65
 ORDER BY mark DESC;
 
 CREATE OR REPLACE VIEW new_list AS
-Select FirstName, LastName, Salary FROM Employees;
+SELECT FirstName, LastName, Salary FROM Employees;
 
 DROP VIEW list;
 
@@ -86,3 +86,13 @@ SELECT age FROM zoo1 WHERE animal IN ('bear', 'bird')
 UNION
 SELECT age FROM zoo2 WHERE animal IN ('lion', 'crocodile');
 
+SELECT CONCAT(name, ' is from ', city) FROM customer;
+
+SELECT * FROM zoo WHERE age > (SELECT AVG(age) FROM zoo);
+
+SELECT age FROM zoo WHERE animal LIKE '%wolf';
+
+
+ -- TEST CHALENGES 2.0
+
+SELECT name FROM students WHERE age BETWEEN 18 ADD 22;
