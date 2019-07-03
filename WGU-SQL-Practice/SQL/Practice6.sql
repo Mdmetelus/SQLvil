@@ -27,4 +27,16 @@ CREATE VIEW hodor;
 
 CREATE VIEW list AS SELECT FirstName, Salary FROM Employeees;
 
+SELECT * FROM list;
 
+CREATE VIEW temp AS 
+SELECT id, name, mark FROM students
+ORDER BY mark DESC LIMIT 10;
+
+CREATE OR REPLACE VIEW temp AS
+SELECT id, name, mark AS grade FROM students
+WHERE mark > 65
+ORDER BY mark DESC;
+
+CREATE OR REPLACE VIEW new_list AS
+Select FirstName, LastName Salary FROM Employees;
