@@ -39,4 +39,16 @@ WHERE mark > 65
 ORDER BY mark DESC;
 
 CREATE OR REPLACE VIEW new_list AS
-Select FirstName, LastName Salary FROM Employees;
+Select FirstName, LastName, Salary FROM Employees;
+
+DROP VIEW list;
+
+ -- QUIZES
+
+ SELECT students.names, universities.names 
+ FROM students LEFT OUTER JOIN universities
+ ON students.university_id = universities.id;
+
+ INSERT INTO people VALUES ('John Smith', '1', 22);
+
+ UPDATE people SET name = 'Jordan' WHERE id = 147;
