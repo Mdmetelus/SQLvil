@@ -79,4 +79,15 @@ USE information_schema;
 
 SHOW CREATE TABLE people\g
 
-INSERT INTO people (birthday, first_name, last_name, mobile) VALUES ( '1996-05-27', 'Paul', 'Thompson', '586-7987');
+INSERT INTO people (birthday, first_name, last_name, mobile) 
+VALUES ( '1996-05-27', 'Paul', 'Thompson', '586-7987');
+
+INSERT INTO people 
+SET last_name='Durand', first_name = 'Camille', mobile = '871-5719', birthday = '1970-03-23';
+
+SELECT * FROM people;
+
+INSERT INTO people (first_name, last_name, mobile, birthday) VALUES ( 'Priya', 'Sharma', '474-5391','1979-12-04');
+
+SELECT 'Priya', 'Sharma', '474-5391','1979-12-04';
+
