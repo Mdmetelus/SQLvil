@@ -53,7 +53,7 @@ DROP VIEW list;
 
  UPDATE people SET name = 'Jordan' WHERE id = 147;
 
- CREATE TABLE(
+ CREATE TABLE new_stuff (
      id int, name varchar(30), PRIMARY KEY (id)
  );
 
@@ -69,4 +69,20 @@ DROP TABLE students;
 ALTER TABLE students DROP COLUMN temp;
 
  -- TEST CHALENGES 1.0
+
+SELECT * FROM users LIMIT 10;
+
+CREATE TABLE users (
+    id INTNOT NULL AUTO_INCREMENT,
+    login VARCHAR(100),
+    password VARCHAR(100)
+);
+
+SELECT * FROM students WHERE age < 21 ORDR BY name;
+
+SELECT * FROM customers WHERE balance > 1000 or city = 'NY' LIMIT 100;
+
+SELECT age FROM zoo1 WHERE animal IN ('bear', 'bird')
+UNION
+SELECT age FROM zoo2 WHERE animal IN ('lion', 'crocodile');
 
