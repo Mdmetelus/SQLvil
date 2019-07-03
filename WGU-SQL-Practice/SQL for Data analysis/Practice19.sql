@@ -101,3 +101,7 @@ VALUES ('Tony', 'Cabral', '121-6644'), ('John', 'Smith', '653-1210');
 INSERT INTO people VALUES ('Noelle', 'Durand', '395-6161','1960-07-06');
 
 INSERT INTO people (first_name, last_name, mobile, birthday) VALUES ('Raj','Sharma', '168-5223', '1980-08-31');
+
+SELECT first_name FROM people;
+
+SELECT * FROM people;
