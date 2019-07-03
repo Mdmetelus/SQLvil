@@ -96,3 +96,8 @@ SELECT age FROM zoo WHERE animal LIKE '%wolf';
  -- TEST CHALENGES 2.0
 
 SELECT name FROM students WHERE age BETWEEN 18 ADD 22;
+
+UPDATE student SET university = 'MIT' WHERE id = 682;
+
+UPDATE zoo SET age = 14 WHERE animal = 'elephant';
+
