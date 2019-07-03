@@ -101,3 +101,8 @@ UPDATE student SET university = 'MIT' WHERE id = 682;
 
 UPDATE zoo SET age = 14 WHERE animal = 'elephant';
 
+UPDATE zoo SET food_balance = 23 WHERE age > (SELECT AVG(age) FROM zoo);
+
+SELECT customers.name, cities.name 
+FROM customers RIGHT OUTER JOIN cities
+ON cities.id = customers.city_id;
