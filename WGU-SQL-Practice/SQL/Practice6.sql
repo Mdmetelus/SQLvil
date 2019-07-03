@@ -52,3 +52,21 @@ DROP VIEW list;
  INSERT INTO people VALUES ('John Smith', '1', 22);
 
  UPDATE people SET name = 'Jordan' WHERE id = 147;
+
+ CREATE TABLE(
+     id int, name varchar(30), PRIMARY KEY (id)
+ );
+
+
+ALTER TABLE people DROP COLUMN age;
+
+CREATE OR REPLACE VIEW most_abs AS
+SELECT id, name, absences FROM students
+ORDER BY absences DESC LIMIT 10;
+
+DROP TABLE students;
+
+ALTER TABLE students DROP COLUMN temp;
+
+ -- TEST CHALENGES 1.0
+
