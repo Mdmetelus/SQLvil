@@ -60,4 +60,18 @@ ALTER TABLE exercise_routine ADD day_of_the_week char;
 -- Write your query here
 ALTER TABLE exercise_routine DROP exercise_name, ADD exercize_name VARCHAR(45);
 
--
+-- Write your query here
+ALTER TABLE exercise_routine DROP COLUMN exercise_name;
+ALTER TABLE exercise_routine ADD COLUMN exercise_name VARCHAR(45);
+
+ALTER TABLE exercise_routine DROP exercise_name;
+ALTER TABLE exercise_routine ADD exercise_name VARCHAR(45);
+
+ALTER TABLE exercise_routine COMMENT 'Exercise routine for January 1 to January 20';
+
+-- Write your query here
+TRUNCATE TABLE exercise_routine;
+
+-- Write your query here
+ -- INSERT INTO ColorLookup DISTINCT color FROM Things;
+INSERT INTO ColorLookup (color) SELECT DISTINCT color FROM Things;
