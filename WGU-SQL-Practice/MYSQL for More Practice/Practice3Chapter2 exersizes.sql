@@ -50,3 +50,14 @@ SELECT company, monthly_fee FROM Services;
 
 -- Write your query here
 DROP TABLE daily_diet_plan;
+
+-- Write your query here
+ALTER TABLE exercise_routine
+ADD COLUMN day_of_the_week CHAR(3);
+
+ALTER TABLE exercise_routine ADD day_of_the_week char;
+
+-- Write your query here
+ALTER TABLE exercise_routine DROP exercise_name, ADD exercize_name VARCHAR(45);
+
+-
