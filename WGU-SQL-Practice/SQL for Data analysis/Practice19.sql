@@ -114,4 +114,16 @@ UPDATE people SET birthday = 1978-09-17 WHERE birthday = '000-00-00';
 
 UPDATE people SET mobile = last_name, last_name = moble WHERE first_name = 'Noelle' OR first_name = 'Raj';
 
+UPDATE people SET last_name = 'Durand' WHERE first_name = 'Noelle';
+
+UPDATE people SET last_name = 'Sharma' WHERE first_name = 'Raj';
+
+SELECT last_name FROM people;
+
+DELETE FROM people WHERE first_name = 'expression';
+
+DELETE FROM people WHERE last_name = 'Durand';
+
+DELETE FROM people WHERE true;
+
 
