@@ -36,3 +36,17 @@ CREATE TABLE diet_plan (
 );
 
 CREATE TABLE diet_plan (food_name VARCHAR(20), calories INT, food_group INT);
+
+-- Write your query here
+SELECT building_name, monthly_rent FROM Buildings;
+
+-- Write your query here
+SELECT * FROM garage WHERE make LIKE 'FERRARI';
+
+SELECT * FROM garage WHERE make = 'Ferrari';
+
+-- Write your query here
+SELECT company, monthly_fee FROM Services;
+
+-- Write your query here
+DROP TABLE daily_diet_plan;
