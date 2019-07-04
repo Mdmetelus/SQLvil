@@ -126,4 +126,36 @@ DELETE FROM people WHERE last_name = 'Durand';
 
 DELETE FROM people WHERE true;
 
+TRUNCATE TABLE people;
 
+SHOW CREATE TABLE people\G
+
+
+ -- 
+ USE addresses
+
+ DROP TABLE IF EXISTS people;
+
+ CREATE TABLE people (
+     first_name varchar(50) NOT NULL DEFAULT '',
+     last_name varchar(50) NOT NULL DEFAULT '',
+     mobile varchar(20) NOT NULL DEFAULT '',
+     birthday DATE DEFAULT NULL,
+     PRIMARY KEY (first_name, last_name, birthday)
+ )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ USE addresses;
+
+INSERT INTO people (first_name, last_name, mobile, birthday ) 
+VALUES 
+('Sheeri', 'Cabral', '121-5555', '1978-09-17'),
+('Tony', 'Cabral', '121-6666', '1975-01-27'),
+('John', 'Smith', '653-1210', '1998-04-07'),
+('Paul', 'Thompson', '586-7987', '1996-05-27');
+
+INSERT INTO people (first_name, last_name, mobile, birthday ) 
+VALUES 
+('Camille', 'Durand', '871-5719', '1970-03-23'),
+('Noelle', 'Durand', '395-6161', '1960-07-06'),
+('Raj', 'Sharma', '168-5223', '1980-08-31'),
+('Priiya', 'Sharma', '474-5391', '1979-12-04');
