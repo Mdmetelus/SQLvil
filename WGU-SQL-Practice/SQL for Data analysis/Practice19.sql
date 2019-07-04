@@ -159,3 +159,31 @@ VALUES
 ('Noelle', 'Durand', '395-6161', '1960-07-06'),
 ('Raj', 'Sharma', '168-5223', '1980-08-31'),
 ('Priiya', 'Sharma', '474-5391', '1979-12-04');
+
+SELECT * FROM people;
+
+ALTER TABLE people ADD COLUMN home_id SMALLINT UNSIGNED DEFAULT NULL;
+
+CREATE TABLE homes (
+    home_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    addresses VARCHAR(100) NOT NULL DEFAULT '',
+    home_phone VARCHAR(20) DEFAULT NULL,
+    PRIMARY KEY (home_id),
+    UNIQUE KEY (address)
+)ENGINE = InnoDB DEFAULT CHARSET=utf8
+
+INSERT INTO homes (home_phone, address) VALUES
+('555-1212', '123 MAin street, Boston MA'),
+('339-8482', '500 College ave, Boston MA'),
+('485-2390', '10 Warf Road, Provincetown MA'),
+('626-5976', '2 Harrison Street, San FRancisco CA');
+
+SELECT * FROM homes;
+
+UPDATE people SET home_id = 1 WHERE last_name = 'Cabral';
+
+UPDATE people SET home_id = 2 WHERE last_name = 'Smith';
+
+UPDATE people SET home_id = 3 WHERE last_name = 'Durand';
+
+Update people SET home_id = 4 WHERE last_name = 'Sharma'
