@@ -105,3 +105,13 @@ INSERT INTO people (first_name, last_name, mobile, birthday) VALUES ('Raj','Shar
 SELECT first_name FROM people;
 
 SELECT * FROM people;
+
+UPDATE table SET;
+
+UPDATE people SET birthday='1975-01-27' WHERE first_name = 'Tony' AND last_name = 'Cabral';
+
+UPDATE people SET birthday = 1978-09-17 WHERE birthday = '000-00-00';
+
+UPDATE people SET mobile = last_name, last_name = moble WHERE first_name = 'Noelle' OR first_name = 'Raj';
+
+
