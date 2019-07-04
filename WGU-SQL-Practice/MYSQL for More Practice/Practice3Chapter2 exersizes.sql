@@ -18,3 +18,21 @@ SpecialNotes VARCHAR(500) NULL,
 FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID));
 
 
+DESCRIBE DATABASES;
+ucertifydb.Customer, usertifydb.Pizza, ucertifydb.CustomerPizzaOrder;
+
+SHOW CREATE TABLE ucertifydb.Customer;
+
+CREATE TABLE Customers (
+CustomerID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  LastName VARCHAR(100) NOT NULL
+);
+
+-- Write your query here
+CREATE TABLE diet_plan (
+  food_name VARCHAR(20),
+  calories INT,
+  food_group enum('dairy group', 'meat group', 'fruits and vegetables', 'bread group', 'misc')
+);
+
+CREATE TABLE diet_plan (food_name VARCHAR(20), calories INT, food_group INT);
