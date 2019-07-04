@@ -173,7 +173,7 @@ CREATE TABLE homes (
 )ENGINE = InnoDB DEFAULT CHARSET=utf8
 
 INSERT INTO homes (home_phone, address) VALUES
-('555-1212', '123 MAin street, Boston MA'),
+('555-1212', '123 Main street, Boston MA'),
 ('339-8482', '500 College ave, Boston MA'),
 ('485-2390', '10 Warf Road, Provincetown MA'),
 ('626-5976', '2 Harrison Street, San FRancisco CA');
