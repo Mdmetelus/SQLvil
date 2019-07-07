@@ -75,3 +75,22 @@ TRUNCATE TABLE exercise_routine;
 -- Write your query here
  -- INSERT INTO ColorLookup DISTINCT color FROM Things;
 INSERT INTO ColorLookup (color) SELECT DISTINCT color FROM Things;
+
+
+-- Write your query here
+ALTER TABLE Things ADD COLUMN color_int INT;
+SELECT * FROM Things;
+
+-- Write your query here
+CREATE TABLE Cipher_keys (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(32) NOT NULL,
+  cipher_key TEXT
+  
+);
+
+CREATE TABLE Cipher_keys (
+    id int auto_increment primary key, 
+    name varchar(32) not null, 
+    cipher_key text
+);
