@@ -94,3 +94,10 @@ CREATE TABLE Cipher_keys (
     name varchar(32) not null, 
     cipher_key text
 );
+
+
+DELETE FROM new_table2 ;
+
+SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE 
+FROM PRODUCT
+WHERE P_PRICE <= 10;
