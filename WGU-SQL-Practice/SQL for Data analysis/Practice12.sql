@@ -50,3 +50,42 @@ SHOW TABLE STATUS;
 
 DROP TABLE IF EXISTS test; -- removed the table
 
+DROP TABLE IF EXISTS test;
+
+CREATE TABLE test (
+    id INTEGER,
+    a VARCHAR(255),
+    b VARCHAR(255), -- NO INDEXES SO I NEED TO ADD THEM IN
+    INDEX(a) --  THIS IS HOW I CREATE AN INDEX
+    -- also can INDEX(a, b) will sort first on a then(within the a's sorts on the b's next)
+    -- also can name the index INDEX MaxABIndex (a, b) 
+);
+INSERT INTO test ( id, a, b ) VALUES ( 1, 'one', 'two' );
+INSERT INTO test ( id, a, b ) VALUES ( 2, 'two', 'three');
+INSERT INTO test ( id, a, b ) VALUES ( 3, 'three', 'four');
+SELECT * FROM test;
+DESCRIBE test;
+SHOW INDEXES FROM test;
+
+
+
+DROP TABLE IF EXISTS test;
+
+CREATE TABLE test (
+    id INTEGER,
+    a VARCHAR(255),
+    b VARCHAR(255),
+    INDEX MaxABIndex (a, b) 
+);
+INSERT INTO test ( id, a, b ) VALUES ( 1, 'one', 'two' );
+INSERT INTO test ( id, a, b ) VALUES ( 2, 'two', 'three');
+INSERT INTO test ( id, a, b ) VALUES ( 3, 'three', 'four');
+SELECT * FROM test;
+DESCRIBE test;
+SHOW INDEXES FROM test;
+
+DROP INDEX MaxABIndex ON test; -- index removed
+DESCRIBE test;
+SHOW INDEXES FROM test;
+
+DROP TABLE IF EXISTS test;
