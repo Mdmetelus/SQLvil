@@ -48,3 +48,9 @@ FROM PRODUCT;
 UPDATE uc_pizzaorder
 SET OrderQty = 10
 WHERE PizzaOrderID = 1;
+
+-- Write your query here
+DELETE FROM test1 WHERE id = 35 OR id = 23;
+
+-- Write your query here
+INSERT INTO garage (make, model, year) VALUES ('Chevrolet', 'Camaro', 1971);
