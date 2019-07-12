@@ -17,3 +17,16 @@ DELETE FROM people WHERE last_name  IS NULL;
 
 SELECT * FROM people WHERE last_name = 'Durand';
 
+DELETE FROM people WHERE 1 = 1;
+
+DELETE FROM people WHERE true;
+
+TRUNCATE TABLE people;
+
+ -- Functions and operators
+
+ SELECT * FROM people;
+
+ SELECT COUNT(home_phone) FROM homes;
+
+ SELECT home_phone FROM homes WHERE home_id = 1;
