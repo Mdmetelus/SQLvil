@@ -66,3 +66,15 @@ UPDATE for_sale SET price = 50000;
 
 -- Write your query here
 DELETE FROM garage WHERE make = 'Ferrari';
+
+-- Write your query here
+UPDATE for_sale SET price = 40000 WHERE model = 'Camaro';
+SELECT * from for_sale;
+
+-- Write your query here
+SELECT * FROM widgets;
+
+INSERT INTO widgets (num_sold, customer, paid_amt) VALUES ( 3, 'Mary Wills', 33.33);
+SELECT * FROM widgets;
+
+SELECT building_name, monthly_rent FROM Buildings;
