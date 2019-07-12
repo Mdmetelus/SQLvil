@@ -25,8 +25,25 @@ TRUNCATE TABLE people;
 
  -- Functions and operators
 
- SELECT * FROM people;
+SELECT * FROM people;
 
- SELECT COUNT(home_phone) FROM homes;
+SELECT COUNT(home_phone) FROM homes;
 
- SELECT home_phone FROM homes WHERE home_id = 1;
+SELECT home_phone FROM homes WHERE home_id = 1;
+
+UPDATE homes SET home_phone = NULL WHERE home_id = 1;
+
+SELECT COUNT(home_phone) FROM homes;
+
+SELECT COUNT(*) FROM homes;
+
+UPDATE homes SET home_phone = '555-1212' WHERE home_id = 1;
+
+SELECT COUNT(DISTINCT last_name) FROM people;
+
+SELECT SUM(home_id), AVG(home_id) FROM people;
+
+SELECT SUM(home_id) AS 'Sum', AVG(home_id) AS 'Avg' FROM people;
+
+SELECT MIN(birthday) FROM people;
+
