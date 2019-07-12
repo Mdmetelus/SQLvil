@@ -86,3 +86,10 @@ SELECT * FROM
 -- Write your query here
 ALTER TABLE Things DROP color;
 SELECT * FROM Things;
+
+-- Write your query here
+-- ALTER TABLE Pass_keys MODIFY pass_key blob NOT NULL;
+
+DESCRIBE Pass_keys;
+ALTER TABLE Pass_keys modify pass_key blob NOT NULL;
+DESCRIBE Pass_keys;
