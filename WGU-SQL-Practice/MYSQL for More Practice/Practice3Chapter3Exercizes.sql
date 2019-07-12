@@ -54,3 +54,15 @@ DELETE FROM test1 WHERE id = 35 OR id = 23;
 
 -- Write your query here
 INSERT INTO garage (make, model, year) VALUES ('Chevrolet', 'Camaro', 1971);
+
+-- Write your query here
+SELECT * FROM for_sale;
+
+UPDATE for_sale SET price = 50000 WHERE price IS NULL;
+
+SELECT * FROM for_sale;
+
+UPDATE for_sale SET price = 50000;
+
+-- Write your query here
+DELETE FROM garage WHERE make = 'Ferrari';
