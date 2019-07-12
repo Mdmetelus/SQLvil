@@ -78,3 +78,11 @@ INSERT INTO widgets (num_sold, customer, paid_amt) VALUES ( 3, 'Mary Wills', 33.
 SELECT * FROM widgets;
 
 SELECT building_name, monthly_rent FROM Buildings;
+
+
+ALTER TABLE table1 DELETE column2;
+SELECT * FROM 
+
+-- Write your query here
+ALTER TABLE Things DROP color;
+SELECT * FROM Things;
