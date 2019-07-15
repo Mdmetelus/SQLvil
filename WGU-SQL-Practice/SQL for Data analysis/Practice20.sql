@@ -70,3 +70,7 @@ SELECT CURRENT_TIME();
 SELECT SYSDATE(), NOW(), SLEEEP(1.5), SYSDATE(), NOW()\G
 
 SELECT 3+2 AS 'Sum', 3-2 AS 'Diff', 3*2 AS 'multiply', 3/2 AS 'Divide';
+
+SELECT POW(3,2), SQRT(100), 3%2 AS 'Modulo';
+
+SELECT ABS(2-3), CEIL(3/2), FLOOR(3/2);
