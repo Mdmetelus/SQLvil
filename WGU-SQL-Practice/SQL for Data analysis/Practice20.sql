@@ -74,3 +74,7 @@ SELECT 3+2 AS 'Sum', 3-2 AS 'Diff', 3*2 AS 'multiply', 3/2 AS 'Divide';
 SELECT POW(3,2), SQRT(100), 3%2 AS 'Modulo';
 
 SELECT ABS(2-3), CEIL(3/2), FLOOR(3/2);
+
+SELECT LOG10(100); -- answer = 3
+
+SELECT LOG2(256); -- answer = 8
