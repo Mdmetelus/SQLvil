@@ -85,8 +85,15 @@ SELECT SIN(1), COS(1);
 
  -- SELECT TANGENT(1), COTANGENT(1);
 
- SELECT NOW(), SYSDATE();
+SELECT NOW(), SYSDATE();
 
- SELECT UPPER(first_name), LOWER(last_name) FROM people;
+SELECT UPPER(first_name), LOWER(last_name) FROM people;
 
- 
+SELECT REPEAT('hello',5);
+
+SELECT REPLACE(last_name, 'a', '1') FROM people;
+
+SELECT last_name FROM people;
+
+INSERT INTO people (first_name, last_name) VALUES ('Otto', 'Von Count');
+
