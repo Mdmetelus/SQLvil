@@ -97,3 +97,11 @@ SELECT last_name FROM people;
 
 INSERT INTO people (first_name, last_name) VALUES ('Otto', 'Von Count');
 
+SELECT first_name, last_name FROM people WHERE first_name = REVERSE(first_name);
+
+DELETE FROM people WHERE first_name = REVERSE(first_name);
+
+SELECT CONCAT(first_name, '', last_name) FROM people WHERE last_name = 'Cabral';
+
+SELECT CONCAT_WS(' ', first_name, last_name, moble) FROM people WHERE last_name = 'cabral';
+
