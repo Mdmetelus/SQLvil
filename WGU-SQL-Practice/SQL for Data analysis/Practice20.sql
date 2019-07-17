@@ -78,3 +78,8 @@ SELECT ABS(2-3), CEIL(3/2), FLOOR(3/2);
 SELECT LOG10(100); -- answer = 3
 
 SELECT LOG2(256); -- answer = 8
+
+Select EXP(1), PI*POW(3,2);
+
+SELECT SIN(1), COS(1);
+
