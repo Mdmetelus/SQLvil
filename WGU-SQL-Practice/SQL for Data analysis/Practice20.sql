@@ -86,4 +86,7 @@ SELECT SIN(1), COS(1);
  -- SELECT TANGENT(1), COTANGENT(1);
 
  SELECT NOW(), SYSDATE();
+
+ SELECT UPPER(first_name), LOWER(last_name) FROM people;
+
  
