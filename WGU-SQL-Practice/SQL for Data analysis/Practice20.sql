@@ -83,3 +83,7 @@ Select EXP(1), PI*POW(3,2);
 
 SELECT SIN(1), COS(1);
 
+ -- SELECT TANGENT(1), COTANGENT(1);
+
+ SELECT NOW(), SYSDATE();
+ 
