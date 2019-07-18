@@ -127,6 +127,13 @@ SELECT first_name, birthday FROM people WHERE first_name = 'John' OR first_name 
 
 SELECT first_name, birthday FROM people WHERE first_name in ('John', 'Camille', 'Raj');
 
-CREATE TABLE like_test (String1 char(2), string2 char(2)) DEFAULT CHARSET latin1 DEFAULT COLLATE latin1_german2_ci;
+CREATE TABLE like_test (string1 char(2), string2 char(2)) DEFAULT CHARSET latin1 DEFAULT COLLATE latin1_german2_ci;
 
 INSERT INTO like_test (string1, string2) VALUES ('ae', 'a*');
+
+SELECT string1, string2, string1 = string2, string1 LIKE string2 FROM like_test;
+
+SELECT first_name FROM people WHERE RIGHT(firrst_name, 1) ='e';
+
+SELECT firrst_name FROM people WHERE first_name LIKE '%e';
+
