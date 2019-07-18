@@ -109,3 +109,6 @@ SELECT LEFT(home_phone, 3), RIGHT(home_phone,4) FROM homes;
 
 SELECT LENGTH(address), CHAR_LENGTH(address) FROM homes;
 
+CREATE TABLE length_test (string varchar(10)) DEFAULT CHARSET UTF8;
+
+INSERT INTO length_test VALUES ('$'), ('$$');
