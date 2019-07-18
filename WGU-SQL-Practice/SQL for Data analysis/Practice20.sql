@@ -112,3 +112,9 @@ SELECT LENGTH(address), CHAR_LENGTH(address) FROM homes;
 CREATE TABLE length_test (string varchar(10)) DEFAULT CHARSET UTF8;
 
 INSERT INTO length_test VALUES ('$'), ('$$');
+
+SELECT string, LENGTH(string), CHAR_LENGTH(string) FROM length_test;
+
+HELP CONCAT;
+
+SELECT first_name, last_name, YEAR(birthday) FROM people WHERE birthday
