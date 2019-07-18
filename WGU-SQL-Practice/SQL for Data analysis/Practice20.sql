@@ -1,4 +1,4 @@
-UPDATE people SET moble=last_name, last_name = moble WHERE firt_name = 'Noelle' OR first_name = 'Raj';
+UPDATE people SET moble=last_name, last_name = moble WHERE first_name = 'Noelle' OR first_name = 'Raj';
 
 SELECT * FROM people;
 
@@ -133,7 +133,13 @@ INSERT INTO like_test (string1, string2) VALUES ('ae', 'a*');
 
 SELECT string1, string2, string1 = string2, string1 LIKE string2 FROM like_test;
 
-SELECT first_name FROM people WHERE RIGHT(firrst_name, 1) ='e';
+SELECT first_name FROM people WHERE RIGHT(first_name, 1) ='e';
 
-SELECT firrst_name FROM people WHERE first_name LIKE '%e';
+SELECT first_name FROM people WHERE first_name LIKE '%e';
+
+SELECT first_name FROM people WHERE first_name LIKE '%r%';
+
+SELECT first_name FROM people WHERE first_name NOT LIKE '%r%';
+
+SELECT COUNT(*) FROM people;
 
