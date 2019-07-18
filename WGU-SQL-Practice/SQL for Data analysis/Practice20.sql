@@ -143,3 +143,12 @@ SELECT first_name FROM people WHERE first_name NOT LIKE '%r%';
 
 SELECT COUNT(*) FROM people;
 
+SELECT last_name, COUNT(*) FROM people GROUP BY last_name;
+
+SELECT last_name, MIN(birthday) FROM people GROUP BY last_name;
+
+SELECT last_name, GROUP_CONCAT(moble) FROM people GROUP BY last_name;
+
+SELECT last_name, GROUP_CONCAT(moble SEPARATOR ' and ') FROM people GROUP BY last_name;
+
+SELECT last_name, GROUP_CONCAT(moble SEPARATOR ' and ') FROM people GROUP BY last_name HAVING COUNT(*) > 1;
