@@ -101,7 +101,11 @@ SELECT first_name, last_name FROM people WHERE first_name = REVERSE(first_name);
 
 DELETE FROM people WHERE first_name = REVERSE(first_name);
 
-SELECT CONCAT(first_name, '', last_name) FROM people WHERE last_name = 'Cabral';
+SELECT CONCAT(first_name, ' ', last_name) FROM people WHERE last_name = 'Cabral';
 
 SELECT CONCAT_WS(' ', first_name, last_name, moble) FROM people WHERE last_name = 'cabral';
+
+SELECT LEFT(home_phone, 3), RIGHT(home_phone,4) FROM homes;
+
+SELECT LENGTH(address), CHAR_LENGTH(address) FROM homes;
 
