@@ -122,3 +122,11 @@ SELECT first_name, last_name, YEAR(birthday) FROM people WHERE birthday >= '1970
 SELECT first_name, last_name, YEAR(birthday) FROM people WHERE birthday BETWEEN '1970-01-01' AND '1979-12-31';
 
 SELECT first_name, last_name, YEAR(birthday) FROM people WHERE birthday NOT BETWEEN '1970-01-01' AND '1979-12-31';
+
+SELECT first_name, birthday FROM people WHERE first_name = 'John' OR first_name  = 'Camille' OR first_name = 'Raj';
+
+SELECT first_name, birthday FROM people WHERE first_name in ('John', 'Camille', 'Raj');
+
+CREATE TABLE like_test (String1 char(2), string2 char(2)) DEFAULT CHARSET latin1 DEFAULT COLLATE latin1_german2_ci;
+
+INSERT INTO like_test (string1, string2) VALUES ('ae', 'a*');
