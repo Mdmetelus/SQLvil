@@ -117,4 +117,8 @@ SELECT string, LENGTH(string), CHAR_LENGTH(string) FROM length_test;
 
 HELP CONCAT;
 
-SELECT first_name, last_name, YEAR(birthday) FROM people WHERE birthday
+SELECT first_name, last_name, YEAR(birthday) FROM people WHERE birthday >= '1970-01-01' AND birthday <= '1979-12-31';
+
+SELECT first_name, last_name, YEAR(birthday) FROM people WHERE birthday BETWEEN '1970-01-01' AND '1979-12-31';
+
+SELECT first_name, last_name, YEAR(birthday) FROM people WHERE birthday NOT BETWEEN '1970-01-01' AND '1979-12-31';
