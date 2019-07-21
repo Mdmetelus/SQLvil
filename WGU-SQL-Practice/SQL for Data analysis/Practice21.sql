@@ -31,3 +31,18 @@ SELECT LEFT(last_name,1) AS monogram, GROUP_CONCAT(first_name SEPERATOR ' & ') A
 
 SELECT LEFT(last_name,1) AS monogram, first_name AS names FROM people GROUP BY last_name HAVING COUNT(*) > 1 ORDER BY NULL;
 
+SELECT home_id FROM people WHERE last_name = 'Sharma';
+
+INSERT INTO people (first_name, last_name, birthday, home_id) VALUES ('John', 'Smith', '1998-04-07', 4), ('Maya', 'Wasserman', NULL, 4), ('Paul', 'Thompson', '1996-05-27',1);
+
+SELECT * FROM people;
+
+INSERT INTO people (first_name, last_name, birthday, home_id) VALUES 
+('John', 'Smith', '1998-04-07', 4), ('Maya', 'Wasserman', NULL, 4), ('Paul', 'Thompson', '1996-05-27',1) 
+ON DUPLICATE KEY UPDATE
+home_id = VALUES(home_id);
+
+INSERT INTO people (first_name, last_name, birthday, home_id) VALUES 
+('John', 'Smith', '1998-04-07', 4), ('Maya', 'Wasserman', '0000-00-00', 4), ('Paul', 'Thompson', '1996-05-27',1) 
+ON DUPLICATE KEY UPDATE
+home_id = VALUES(home_id);
