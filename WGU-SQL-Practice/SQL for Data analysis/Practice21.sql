@@ -9,7 +9,7 @@ SELECT first_name, last_name FROM people ORDER BY last_name, first_name;
 
 SELECT first_name, birthday FROM people ORDER BY birthday DESC LIMIT 5;
 
-SELECT first_name, MONTHNAME(birthday) as mon, birthday FROM people ORDER BY MONTH(birthday);
+SELECT first_name, MONTHNAME(birthday) AS mon, birthday FROM people ORDER BY MONTH(birthday);
 
 SELECT last_name, COUNT(*) FROM people GROUP BY last_name;
 
@@ -21,6 +21,12 @@ SELECT DATEDIFF('1998-04-07'. '1970-03-23');
 
 SELECT FROM_DAYS(DATEDIFF('1998-04-07', '1970-03-23'));
 
-SELECT LEFT(last_name,1) as monogram, first_name FROM people;
+SELECT LEFT(last_name,1) AS monogram, first_name FROM people;
 
-SELECT LEft(last_name,1) AS monogram, first_name FROM people GROUP BY last_name;
+SELECT LEFT(last_name,1) AS monogram, first_name FROM people GROUP BY last_name;
+
+SELECT LEFT(last_name,1) AS monogram, GROUP_CONCAT(first_name SEPERATOR ' & ') AS names FROM people GROUP BY last_name HAVING COUNT(*) > 1 ORDER BY NULL;
+
+SELECT LEFT(last_name,1) AS monogram, GROUP_CONCAT(first_name SEPERATOR ' & ') AS names FROM people GROUP BY last_name HAVING COUNT(*) > 1 ORDER BY first_name DESC;
+
+
