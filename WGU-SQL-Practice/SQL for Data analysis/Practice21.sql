@@ -29,4 +29,5 @@ SELECT LEFT(last_name,1) AS monogram, GROUP_CONCAT(first_name SEPERATOR ' & ') A
 
 SELECT LEFT(last_name,1) AS monogram, GROUP_CONCAT(first_name SEPERATOR ' & ') AS names FROM people GROUP BY last_name HAVING COUNT(*) > 1 ORDER BY first_name DESC;
 
+SELECT LEFT(last_name,1) AS monogram, first_name AS names FROM people GROUP BY last_name HAVING COUNT(*) > 1 ORDER BY NULL;
 
