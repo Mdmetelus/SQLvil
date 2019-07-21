@@ -17,4 +17,10 @@ SELECT last_name, COUNT(*) FROM people GROUP BY last_name ORDER BY NULL;
 
 SELECT first_name, birthday FROM people WHERE first_name IN ('Camile','John');
 
-SELECT DATEDIFF('1998-04-07'. '1970-03-23')
+SELECT DATEDIFF('1998-04-07'. '1970-03-23');
+
+SELECT FROM_DAYS(DATEDIFF('1998-04-07', '1970-03-23'));
+
+SELECT LEFT(last_name,1) as monogram, first_name FROM people;
+
+SELECT LEft(last_name,1) AS monogram, first_name FROM people GROUP BY last_name;
