@@ -46,3 +46,13 @@ INSERT INTO people (first_name, last_name, birthday, home_id) VALUES
 ('John', 'Smith', '1998-04-07', 4), ('Maya', 'Wasserman', '0000-00-00', 4), ('Paul', 'Thompson', '1996-05-27',1) 
 ON DUPLICATE KEY UPDATE
 home_id = VALUES(home_id);
+
+SELECT first_name, last_name, home_id FROM people;
+
+INSERT INTO people (first_name, last_name, birthday, home_id) VALUES 
+('John', 'Smith', '1998-04-07', 4), ('Maya', 'Wasserman', '0000-00-00', 4), ('Paul', 'Thompson', '1996-05-27',1) 
+ON DUPLICATE KEY UPDATE
+home_id = VALUES(home_id),
+last_name=LEFT(mobile,3);
+
+
