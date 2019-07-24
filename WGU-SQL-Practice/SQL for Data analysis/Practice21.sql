@@ -62,3 +62,6 @@ REPLACE INTO people (first_name, last_name, birthday, home_id) VALUES ('John', '
 INSERT IGNORE INTO people (first_name, last_name, birthday, home_id) VALUES ('Camille', 'Durand', '1970-03-23',4), ('Jack', 'Durand','1972-02-19',3);
 
 SELECT * FROM people WHERE last_name = 'Durand';
+
+INSERT IGNORE INTO homes (address)
+VALUES ('1234 Broadway, New York City, NY' ), ( ' 123 Main Street, Boston MA'), ('1600 Pennsylvania Avenue, Washington DC');
