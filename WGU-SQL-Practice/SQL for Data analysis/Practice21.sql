@@ -55,4 +55,10 @@ ON DUPLICATE KEY UPDATE
 home_id = VALUES(home_id),
 last_name=LEFT(mobile,3);
 
+DELETE FROM people WHERE first_name = 'Maya';
 
+REPLACE INTO people (first_name, last_name, birthday, home_id) VALUES ('John', 'Sharma', '1998-04-07',1), ('Paul', 'Sharna', '1996-05-27',4), ('Maya','Wasserman','0000-00-00',1)/c
+
+INSERT IGNORE INTO people (first_name, last_name, birthday, home_id) VALUES ('Camille', 'Durand', '1970-03-23',4), ('Jack', 'Durand','1972-02-19',3);
+
+SELECT * FROM people WHERE last_name = 'Durand';
