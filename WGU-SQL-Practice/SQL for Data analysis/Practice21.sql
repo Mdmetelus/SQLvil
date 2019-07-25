@@ -78,3 +78,13 @@ INSERT INTO people (first_name last_name, birthday, mobile, home_id) VALUES
 
 SELECT * FROM people;
 
+ -- joins
+
+INSERT INTO people (first_name, last_name, birthday) VALUES ('Eli', 'Kramer', '1984-01-15');
+
+SELECT * FROM people;
+
+SELECT * FROM homes;
+
+SELECT first_name, last_name, address FROM people 
+INNER JOIN homes using (home_id);
