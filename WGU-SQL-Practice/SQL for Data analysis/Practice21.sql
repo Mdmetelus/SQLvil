@@ -65,3 +65,9 @@ SELECT * FROM people WHERE last_name = 'Durand';
 
 INSERT IGNORE INTO homes (address)
 VALUES ('1234 Broadway, New York City, NY' ), ( ' 123 Main Street, Boston MA'), ('1600 Pennsylvania Avenue, Washington DC');
+
+SELECT * FROM homes;
+
+REPLACE INTO homes (address) VALUES ('1234 Broadway, New York City, NY' ), ( ' 123 Main Street, Boston MA'), ('1600 Pennsylvania Avenue, Washington DC');
+
+UPDATE people SET home_id = 9 WHERE home_id = 1;
