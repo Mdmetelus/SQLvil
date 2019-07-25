@@ -1,5 +1,5 @@
 
-SELECT last_name, GROUP_CONCAT(moble SEPERATOR ' or ') FROM people WHERE last_name != 'Cabral' GROUP BY last_name HAVING COUNT(*) > 1;
+SELECT last_name, GROUP_CONCAT(mobile SEPERATOR ' or ') FROM people WHERE last_name != 'Cabral' GROUP BY last_name HAVING COUNT(*) > 1;
 
 SELECT first_name, birthday FROM people ORDER BY birthday;
 
@@ -71,3 +71,10 @@ SELECT * FROM homes;
 REPLACE INTO homes (address) VALUES ('1234 Broadway, New York City, NY' ), ( ' 123 Main Street, Boston MA'), ('1600 Pennsylvania Avenue, Washington DC');
 
 UPDATE people SET home_id = 9 WHERE home_id = 1;
+
+INSERT INTO people (first_name last_name, birthday, mobile, home_id) VALUES
+ ('Maya', 'Wasserman', '0000-00-00','',8), ('Priya', 'Sharma', '1979-12-04', '474-5391',4),
+ ('Tommy', 'Kritzer', '0000-00-00', '', 1) ON DUPLICATE KEY UPDATE mobile = VALUES (mobile), home_id = VALUES (home_id);
+
+SELECT * FROM people;
+
