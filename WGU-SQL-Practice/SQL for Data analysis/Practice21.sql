@@ -87,4 +87,14 @@ SELECT * FROM people;
 SELECT * FROM homes;
 
 SELECT first_name, last_name, address FROM people 
-INNER JOIN homes using (home_id);
+INNER JOIN homes USING (home_id);
+
+ALTER TABLE people CHANGE home_id home smallint unsigned default null;
+
+SELECT first_name, last_name address FROM people INNER JOIN homes USING (home_id);
+
+-- error;
+
+SELECT first_name, last_name,address FROM people INNER JOIN homes ON (people.homes = homes.home_id);
+ -- no more error;
+
