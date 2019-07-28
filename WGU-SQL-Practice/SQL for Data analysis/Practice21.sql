@@ -105,3 +105,6 @@ ALTER TABLE people CHANGE homes home_id smallint unsigned default NULL;
 SELECT * FROM people INNER JOIN homes USING (home_id)/G -- /G gives reply in a vertical format
 
 SELECT first_name, last_name, homes.* FROM people INNER Join homes USING (home_id)/G
+
+SELECT first_name, last_name, address FROM people
+LEFT JOIN homes USING (home_id);
