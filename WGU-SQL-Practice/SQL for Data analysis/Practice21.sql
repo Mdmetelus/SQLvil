@@ -108,3 +108,5 @@ SELECT first_name, last_name, homes.* FROM people INNER Join homes USING (home_i
 
 SELECT first_name, last_name, address FROM people
 LEFT JOIN homes USING (home_id);
+
+SELECT first_name, last_name, address FROM homes RIGHT JOIN people USING (home_id);
