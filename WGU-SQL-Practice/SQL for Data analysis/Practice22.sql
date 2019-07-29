@@ -55,7 +55,7 @@ INSERT INTO customer (name, address, city, state, zip) VALUES
 
 SELECT * FROM customer;
 
-INSERT INTO customer (name, city, state) VALUES ('Jimmy Hendrix', 'Renton', 'WA');
+INSERT INTO customer (name, city, state) VALUES ('Jimi Hendrix', 'Renton', 'WA');
 
 SELECT * FROM customer;
 
@@ -66,4 +66,11 @@ WHERE name LIKE 'Jimi%';
 
 SELECT * FROM customer WHERE name LIKE 'Jimi%';
 
+UPDATE customer SET address = '987 Mockingbird Lane' WHERE name LIKE 'Jimi%';
+
+SELECT * FROM customer WHERE name LIKE 'Jimi%';
+
+UPDATE customer SET address = NULL  WHERE name LIKE 'Jimi%';
+
+SELECT * FROM customer WHERE name LIKE 'Jimi%';
 
