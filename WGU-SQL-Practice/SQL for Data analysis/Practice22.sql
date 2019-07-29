@@ -21,5 +21,14 @@ SELECT * FROM Country;
 
 SELECT * FROM Country ORDER BY Name;
 
+SELECT Name, Life Expectancy AS 'Life Expectancy' FROM Country ORDER BY Name;
+
+SELECT COUNT(*) FROM Country ORDER BY Name;
+
+SELECT * FROM Country ORDER BY Name LIMIT 5;
+
+SELECT * FROM Country ORDER BY Name LIMIT 5, 5;
+
+USE world;
 
 
