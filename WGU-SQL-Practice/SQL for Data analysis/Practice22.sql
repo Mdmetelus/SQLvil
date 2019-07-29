@@ -39,7 +39,16 @@ SELECT Name AS Country, Code AS ISO, Region, Population AS Pop FROM Country ORDE
 
 USE world;
 
-SELECT COUNT(*) FROM COUNTRY;
+SELECT COUNT(*) FROM Country
+WHERE Population > 10000000;
+
+SELECT COUNT(*) FROM Country WHERE Population > 10000000 AND Continent = 'Europe';
+
+SELECT COUNT(LifeExpectancy) FROM Country;
+
+USE scratch; -- scratch database
+
+SELECT 
 
 
 
