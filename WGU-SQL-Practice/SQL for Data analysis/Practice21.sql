@@ -123,3 +123,5 @@ SELECT COUNT(first_name), address FROM homes INNER JOIN people USING (home_id) W
 
 SELECT COUNT(first_name), address FROM homes LEFT JOIN people USING (home_id) GROUP BY address;
 
+SELECT CONCAT(first_name, ' ', last_name) AS name, address, birthday FROM homes INNER JOIN people USING (home_id)
+WHERE birthday ! = 0 ORDER BY MONTH(birthday);
