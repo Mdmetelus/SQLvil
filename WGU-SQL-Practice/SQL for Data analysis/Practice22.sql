@@ -48,7 +48,22 @@ SELECT COUNT(LifeExpectancy) FROM Country;
 
 USE scratch; -- scratch database
 
-SELECT 
+SELECT * FROM customer;
 
+INSERT INTO customer (name, address, city, state, zip) VALUES 
+('Fred Flinstone', '123 Cobblestone Way', 'Bedrock','CA', '91234');
+
+SELECT * FROM customer;
+
+INSERT INTO customer (name, city, state) VALUES ('Jimmy Hendrix', 'Renton', 'WA');
+
+SELECT * FROM customer;
+
+SELECT * FROM customer WHERE name LIKE 'Jimi%';
+
+UPDATE customer SET address = '123 Music Avenue', Zip = '98056'
+WHERE name LIKE 'Jimi%';
+
+SELECT * FROM customer WHERE name LIKE 'Jimi%';
 
 
