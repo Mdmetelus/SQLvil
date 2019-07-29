@@ -133,3 +133,6 @@ ORDER BY last_name, first_name;
 
 SELECT COUNT(first_name), address FROM homes INNER JOIN people USING(home_id)
 WHERE people.home_id IS NOT NULL GROUP BY address;
+
+SELECT COUNT(first_name), address FROM homes LEFT JOIN people USING (home_id) GROUP BY address;
+
