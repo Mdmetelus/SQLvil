@@ -31,4 +31,15 @@ SELECT * FROM Country ORDER BY Name LIMIT 5, 5;
 
 USE world;
 
+SELECT * FROM Country ORDER BY Code;
+
+SELECT Name, Code, Region, Population FROM Country ORDER BY Code;
+
+SELECT Name AS Country, Code AS ISO, Region, Population AS Pop FROM Country ORDER BY Code;
+
+USE world;
+
+SELECT COUNT(*) FROM COUNTRY;
+
+
 
