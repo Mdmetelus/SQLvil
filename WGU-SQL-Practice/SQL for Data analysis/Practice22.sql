@@ -76,9 +76,18 @@ SELECT * FROM customer WHERE name LIKE 'Jimi%';
 
 USE scratch;
 
-CREATE TABLE test (a INT, b VARCHAR(16), c VARCHAR(16) );
+CREATE TABLE test ( a INT, b VARCHAR(16), c VARCHAR(16) );
 INSERT INTO test VALUES (1,'this', 'right here!');
 INSERT INTO test VALUES (2, 'that', 'over there!');
 INSERT INTO test VALUES (3, 'another', 'nowhere.');
 INSERT INTO test VALUES (4, 'again', 'guess where?');
 INSERT INTO test VALUES (1,'one more', 'everywhere!');
+
+SELECT * FROM test;
+
+SELECT * FROM test WHERE a = 2;
+
+DELETE * FROM test WHERE a = 2;
+
+SELECT * FROM test;
+
