@@ -70,7 +70,15 @@ UPDATE customer SET address = '987 Mockingbird Lane' WHERE name LIKE 'Jimi%';
 
 SELECT * FROM customer WHERE name LIKE 'Jimi%';
 
-UPDATE customer SET address = NULL  WHERE name LIKE 'Jimi%';
+UPDATE customer SET address = NULL WHERE name LIKE 'Jimi%';
 
 SELECT * FROM customer WHERE name LIKE 'Jimi%';
 
+USE scratch;
+
+CREATE TABLE test (a INT, b VARCHAR(16), c VARCHAR(16) );
+INSERT INTO test VALUES (1,'this', 'right here!');
+INSERT INTO test VALUES (2, 'that', 'over there!');
+INSERT INTO test VALUES (3, 'another', 'nowhere.');
+INSERT INTO test VALUES (4, 'again', 'guess where?');
+INSERT INTO test VALUES (1,'one more', 'everywhere!');
