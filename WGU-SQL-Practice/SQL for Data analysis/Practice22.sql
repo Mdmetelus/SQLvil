@@ -123,5 +123,7 @@ USE scratch;
 
 SHOW DATABASES;
 
+SHOW TABLES;
 
+DESCRIBE customer;
 
