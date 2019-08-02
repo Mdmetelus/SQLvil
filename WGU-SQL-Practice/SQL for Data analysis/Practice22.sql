@@ -119,3 +119,9 @@ FROM album AS a Join track AS t
 ON a.id = t.album_id
 ORDER BY a.artist, a.title, t.track_number;
 
+USE scratch;
+
+SHOW DATABASES;
+
+
+
