@@ -102,3 +102,14 @@ DROP TABLE test;
 SELECT * FROM customer;
 
 SELECT * FROM customer WHERE name LIKE 'Jimi%' OR name LIKE 'Fred%';
+
+DELETE FROM customer WHERE name LIKE 'Jimi%' OR name LIKE 'Fred%';
+
+SELECT * FROM customer;
+
+USE album;
+
+SELECT * FROM track;
+
+SELECT * FORM album;
+
