@@ -96,3 +96,9 @@ SELECT * FROM test WHERE a = 1;
 DELETE  FROM test WHERE a = 1;
 
 SELECT * FROM test;
+
+DROP TABLE test;
+
+SELECT * FROM customer;
+
+SELECT * FROM customer WHERE name LIKE 'Jimi%' OR name LIKE 'Fred%';
