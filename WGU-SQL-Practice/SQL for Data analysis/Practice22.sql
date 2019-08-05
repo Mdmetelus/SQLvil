@@ -159,3 +159,9 @@ DROP TABLE IF EXISTS test;
 
 DESCRIBE test;
 
+USE scratch;
+
+DESCRIBE numerics;
+
+SELECT * FROM numerics;
+
