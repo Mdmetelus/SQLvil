@@ -274,3 +274,27 @@ SELECT * FROM test;
 
 DESCRIBE test;
 
+SHOW CREATE TABLE test;
+
+DROP TABLE IF EXISTS test;
+
+USE scratch;
+
+DROP TABLE IF EXISTS test;
+
+CREATE TABLE test (
+    id SERIAL,
+    a VARCHAR(32)
+);
+
+INSERT INTO test ( a ) VALUES ('Pablo');
+INSERT INTO test ( a ) VALUES ('Henri');
+INSERT INTO test ( a ) VALUES ('Jackson');
+
+SELECT * FROM test;
+
+DESCRIBE test;
+
+SHOW CREATE TABLE test;
+
+DROP TABLE IF EXISTS test;
