@@ -192,3 +192,16 @@ SET time_zone = 'SYSTEM';
 SELECT NOW();
 
 SELECT UTC_TIMESTAMP();
+
+DROP TABLE IF EXISTS temp;
+
+CREATE TABLE temp (
+    id INT UNSIGNED UNIQUE AUTO_INCREMENT PRIMARY KEY,
+    stamp TIMESTAMP,
+    name VARCHAR(64)
+);
+
+INSERT INTO temp (name) VALUES ('this');
+INSERT INTO temp (name) VALUES ('that');
+INSERT INTO temp (name) VALUES ('other');
+
