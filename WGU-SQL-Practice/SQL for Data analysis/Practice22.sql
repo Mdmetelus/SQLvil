@@ -185,3 +185,10 @@ SELECT NOW();
 
 SHOW VARIABLES LIKE '%time_zone%';
 
+SET time_zone = '+00:00'; -- SHIFFT to UTC GME or whereevr you are.
+SELECT NOW();
+
+SET time_zone = 'SYSTEM';
+SELECT NOW();
+
+SELECT UTC_TIMESTAMP();
