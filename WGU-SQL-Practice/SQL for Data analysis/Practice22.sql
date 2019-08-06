@@ -175,4 +175,13 @@ SELECT fa + fb FROM numerics;
 
 SELECT fa + fb = 0.3 FROM numerics;
 
+SELECT fa +fb, fa + fb = 0.3 FROM numerics;
+
+ -- Date and time types;
+
+USE scratch;
+
+SELECT NOW();
+
+SHOW VARIABLES LIKE '%time_zone%';
 
