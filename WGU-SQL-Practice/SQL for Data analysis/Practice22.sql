@@ -256,3 +256,14 @@ INSERT INTO test ( a ) VALUES (6);
 INSERT INTO test ( a ) VALUES (7);
 
 SELECT * FROM test;
+
+USE scratch;
+
+DROP TABLE IF EXISTS test;
+
+CREATE TABLE test (
+    id INT UNSIGNED UNIQUE AUTO_INCREMENT PRIMARY KEY,
+    a VARCHAR(32)
+);
+
+INSERT INTO test ( a ) VALUES ('Pablo');
