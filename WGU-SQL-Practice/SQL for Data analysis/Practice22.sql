@@ -267,3 +267,10 @@ CREATE TABLE test (
 );
 
 INSERT INTO test ( a ) VALUES ('Pablo');
+INSERT INTO test ( a ) VALUES ('Henri');
+INSERT INTO test ( a ) VALUES ('Jackson');
+
+SELECT * FROM test;
+
+DESCRIBE test;
+
