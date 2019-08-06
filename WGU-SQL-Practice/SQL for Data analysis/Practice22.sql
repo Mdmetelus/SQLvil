@@ -225,4 +225,12 @@ CREATE TABLE test (
     a ENUM('Pablo', 'Henri', 'Jackson')
 );
 
+INSERT INTO T\test ( a ) VALUES ('Pablo');
+INSERT INTO T\test ( a ) VALUES ('Henri');
+INSERT INTO T\test ( a ) VALUES ('Jackson');
 
+INSERT INTO T\test ( a ) VALUES (1);
+INSERT INTO T\test ( a ) VALUES (2);
+INSERT INTO T\test ( a ) VALUES (3);
+
+SELECT * FROM test;
