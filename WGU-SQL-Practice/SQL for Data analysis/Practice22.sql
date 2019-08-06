@@ -221,16 +221,31 @@ USE scratch;
 DROP TABLE IF EXXISTS test;
 
 CREATE TABLE test (
-    id INT UNsigned UNIGUE AUTO_INCREMENT PRIMARY KEY,
+    id INT UNSIGNED UNIGUE AUTO_INCREMENT PRIMARY KEY,
     a ENUM('Pablo', 'Henri', 'Jackson')
 );
 
-INSERT INTO T\test ( a ) VALUES ('Pablo');
-INSERT INTO T\test ( a ) VALUES ('Henri');
-INSERT INTO T\test ( a ) VALUES ('Jackson');
+INSERT INTO test ( a ) VALUES ('Pablo');
+INSERT INTO test ( a ) VALUES ('Henri');
+INSERT INTO test ( a ) VALUES ('Jackson');
 
-INSERT INTO T\test ( a ) VALUES (1);
-INSERT INTO T\test ( a ) VALUES (2);
-INSERT INTO T\test ( a ) VALUES (3);
+INSERT INTO test ( a ) VALUES (1);
+INSERT INTO test ( a ) VALUES (2);
+INSERT INTO test ( a ) VALUES (3);
 
 SELECT * FROM test;
+
+DROP TABLE IF EXISTS test;
+
+CREATE TABLE test (
+    id INT UNSIGNED UNIGUE AUTO_INCREMENT PRIMARY KEY,
+    a SET('Pablo', 'Henri', 'Jackson')
+);
+
+INSERT INTO test ( a ) VALUES ('Pablo');
+INSERT INTO test ( a ) VALUES ('Henri');
+INSERT INTO test ( a ) VALUES ('Jackson');
+INSERT INTO test ( a ) VALUES ('Pablo,Jackson,Henri,Henri,Henri');
+INSERT INTO test ( a ) VALUES (1);
+INSERT INTO test ( a ) VALUES (2);
+INSERT INTO test ( a ) VALUES (3);
