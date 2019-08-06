@@ -205,3 +205,24 @@ INSERT INTO temp (name) VALUES ('this');
 INSERT INTO temp (name) VALUES ('that');
 INSERT INTO temp (name) VALUES ('other');
 
+CREATE TABLE temp1 (
+    id INT UNSIGNED UNIQUE AUTO_INCREMENT PRIMARY KEY,
+    stamp DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    name VARCHAR(64)
+);
+
+INSERT INTO temp1 (name) VALUES ('this');
+INSERT INTO temp1 (name) VALUES ('that');
+INSERT INTO temp1 (name) VALUES ('other');
+
+
+USE scratch;
+
+DROP TABLE IF EXXISTS test;
+
+CREATE TABLE test (
+    id INT UNsigned UNIGUE AUTO_INCREMENT PRIMARY KEY,
+    a ENUM('Pablo', 'Henri', 'Jackson')
+);
+
+
