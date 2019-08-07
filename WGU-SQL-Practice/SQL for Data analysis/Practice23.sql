@@ -37,3 +37,18 @@ SELECT 1 OR 0;
 
 SELECT 1 xor 0;
 
+SELECT 1 XOR 1;
+-- false
+
+SELECT 1 IS TRUE;  -- is true;
+
+SELECT 1 IS NOT TRUE;
+
+SELECT 1 IS NULL; -- flase
+
+SELECT 1 IS NOT NULL; -- this will be true;
+
+SELECT 0 IS NULL; -- false;
+
+SELECT 0 IS NOT NULL; -- true
+
