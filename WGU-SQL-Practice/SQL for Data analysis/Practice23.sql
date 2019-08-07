@@ -1,0 +1,13 @@
+SELECT 0 = 1;
+
+SELECT 0 = 0;
+
+SELECT 0.0 = 0;
+
+SELECT '0.1' = 0;
+
+SELECT '0.1' > 0;
+
+SELECT '0.1' < 0;
+
+SELECT 
