@@ -44,11 +44,26 @@ SELECT 1 IS TRUE;  -- is true;
 
 SELECT 1 IS NOT TRUE;
 
-SELECT 1 IS NULL; -- flase
+SELECT 1 IS NULL; -- false;
 
 SELECT 1 IS NOT NULL; -- this will be true;
 
 SELECT 0 IS NULL; -- false;
 
-SELECT 0 IS NOT NULL; -- true
+SELECT 0 IS NOT NULL; -- true;
+
+SELECT NULL IS NULL;  -- true;
+
+SELECT '' ISNOT NULL;  -- true;
+
+SELECT 7 IN (1,5,9); -- false
+
+SELECT 7 IN (1,5,7,9);  -- true
+
+USE world;
+
+SELECT Name AS 'Country', ROUND(Population / 1000000) AS 'PopMM' FROM  Country
+WHERE Population > 50000000 AND Continent IN ( 'Asia', 'Europe') ORDER BY Population Desc;
+
+
 
