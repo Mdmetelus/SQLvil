@@ -65,5 +65,14 @@ USE world;
 SELECT Name AS 'Country', ROUND(Population / 1000000) AS 'PopMM' FROM  Country
 WHERE Population > 50000000 AND Continent IN ( 'Asia', 'Europe') ORDER BY Population Desc;
 
+USE album;
+
+SELECT t.title AS 'Track', t.track_number AS 'Track no', a.title As 'Album', a.artist As 'Artist', t.duration As 'Seconds'
+FROM Album As a Join Track As t ON t.album_id = a.album_id
+WHERE t.duration > 120 And t.track_number > 3 ORDER BY t.duration DESC;
+
+SELECT 5 + 3; --- 8
+
+SELECT 5 - 3;
 
 
