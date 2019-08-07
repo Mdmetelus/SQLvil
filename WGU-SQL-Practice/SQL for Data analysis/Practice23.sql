@@ -115,3 +115,17 @@ SELECT
     FROM booltest
 ;
 
+SELECT
+    CASE WHEN a IS NOT NULL THEN 'false' ELSE 'true' END AS boolA,
+    CASE WHEN b IS NOT NULL THEN 'false' ELSE 'true' END AS boolB
+    FROM booltest
+;
+
+ -- ANOTHER WAY THE CREATE A CASE STATMENT;
+
+SELECT
+    CASE a WHEN 1 THEN 'true' ELSE 'false' END AS boolA,
+    CASE b WHEN 1 THEN 'true' ELSE 'false' END AS boolB
+    FROM booltest
+;
+
