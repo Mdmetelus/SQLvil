@@ -71,8 +71,19 @@ SELECT t.title AS 'Track', t.track_number AS 'Track no', a.title As 'Album', a.a
 FROM Album As a Join Track As t ON t.album_id = a.album_id
 WHERE t.duration > 120 And t.track_number > 3 ORDER BY t.duration DESC;
 
-SELECT 5 + 3; --- 8
+SELECT 5 + 3; --- 8;
 
-SELECT 5 - 3;
+SELECT 5 - 3; -- 2;
 
+SELECT 5 * 3; -- 15;
+
+SELECT 5 / 3; --1.667;
+
+SELECT 5 DIV 3; -- 1, divided unincluding the remainder, 1;
+
+SELECT 5 % 3; -- remainder only, 2;
+
+SELECT 5 MOD 3; -- remainder only, 2;
+
+SELECT 5 / 0; -- NULL as the result;
 
