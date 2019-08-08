@@ -142,3 +142,13 @@ INSERT INTO booltest values (1, 0);
 select * from booltest;
 
 SELECT IF (A < 5, 'true', 'false') FROM booltest;
+
+SELECT IF (b > 0, 'true', 'false') FROM booltest;
+
+DROP TABLE IF EXISTS booltest;
+
+USE world;
+
+SELECT name FROM country WHERE name LIKE '_a%' ORDER BY name;
+
+SELECT name FROM country WHERE STRCMP(name, 'France') <= 0 ORDER BY name;
