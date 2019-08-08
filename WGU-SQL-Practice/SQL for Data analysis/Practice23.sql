@@ -129,3 +129,16 @@ SELECT
     FROM booltest
 ;
 
+DROP TABLE IF EXISTS booltest;
+
+USE scratch;
+
+DROP TABLE IF EXISTS booltest;
+
+CREATE TABLE booltest (a INTEGER, b INTEGER);
+
+INSERT INTO booltest values (1, 0);
+
+select * from booltest;
+
+SELECT IF (A < 5, 'true', 'false') FROM booltest;
