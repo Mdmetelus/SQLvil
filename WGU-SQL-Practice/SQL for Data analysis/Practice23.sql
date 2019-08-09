@@ -139,7 +139,7 @@ CREATE TABLE booltest (a INTEGER, b INTEGER);
 
 INSERT INTO booltest values (1, 0);
 
-select * from booltest;
+SELECT * from booltest;
 
 SELECT IF (A < 5, 'true', 'false') FROM booltest;
 
@@ -152,3 +152,17 @@ USE world;
 SELECT name FROM country WHERE name LIKE '_a%' ORDER BY name;
 
 SELECT name FROM country WHERE STRCMP(name, 'France') <= 0 ORDER BY name;
+
+USE world;
+
+SELECT Name FROM country WHERE Name RLIKE 'y$' ORDER BY Name; -- this will give all the countries that end in the letter y;
+
+SELECT Name FROM country WHERE Name RLIKE '[xy][ai]' ORDER BY Name; 
+ -- countries with an x ory, followed by an a or i, in the name;
+
+SELECT 'This' || 'and' || 'that';  -- this is the or operator; logical false
+
+SELECT CONCAT('This', 'and', 'that');
+
+SELECT CONCAT('Love', ' ', 'is', ' ', 'All', ' ', 'you', ' ', 'need!', ' ', 'Said', ' ', ' Jon', ' ', 'Lennon.');
+
