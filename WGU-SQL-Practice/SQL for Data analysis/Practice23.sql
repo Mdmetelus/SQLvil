@@ -166,3 +166,11 @@ SELECT CONCAT('This', 'and', 'that');
 
 SELECT CONCAT('Love', ' ', 'is', ' ', 'All', ' ', 'you', ' ', 'need!', ' ', 'Said', ' ', ' Jon', ' ', 'Lennon.');
 
+SELECT CONCAT( 'one', ' ', 'plus', ' ', 'two');
+
+SELECT CONCAT('one', 42);
+
+SELECT CONCAT('one', 'two');
+
+SELECT CONCAT(42, 42);
+
