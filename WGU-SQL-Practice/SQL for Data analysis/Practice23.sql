@@ -197,7 +197,8 @@ USE scratch;
 
 SELECT * FROM customer WHERE name LIKE '  BILL  SMITH  '; --  no reults;
 
-SELECT * FROM customer WHERE name LIKE TRIM( '    Bill Smith    ');
+SELECT * FROM customer WHERE name LIKE TRIM( '    Bill Smith    '); -- removes empty spaces from bothe the front and back of a string;
+
 
 
 
