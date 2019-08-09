@@ -187,5 +187,18 @@ SELECT BIN(32742);
 
 SELECT CONV(32742, 10, 16); -- converting from base 10 to base 16;
 
+SELECT CONV('7FE6', 16, 10); -- convert from base 16 back to base 10;
+
+SELECT CONV(32742, 10, 24); -- convert from base 10 to base 24; 28k6;
+
+SELECT CONV('28k6', 24, 10); -- convert from bas 24 back to base10;
+
+USE scratch;
+
+SELECT * FROM customer WHERE name LIKE '  BILL  SMITH  '; --  no reults;
+
+SELECT * FROM customer WHERE name LIKE TRIM( '    Bill Smith    ');
+
+
 
 
