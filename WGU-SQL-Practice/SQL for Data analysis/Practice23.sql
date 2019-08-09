@@ -174,3 +174,18 @@ SELECT CONCAT('one', 'two');
 
 SELECT CONCAT(42, 42);
 
+SELECT 32742;
+
+SELECT HEX(32742);
+ -- returnes the hex base number  7FE6;
+
+SELECT OCT(32742);
+ -- returns the OCT number 77746; base 8 no nubers higher than 7;
+
+SELECT BIN(32742);
+ -- returns the binary number 111111111100110;
+
+SELECT CONV(32742, 10, 16); -- converting from base 10 to base 16;
+
+
+
