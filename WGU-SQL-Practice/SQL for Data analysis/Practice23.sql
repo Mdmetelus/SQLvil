@@ -245,9 +245,13 @@ SELECT SUBSTRING_INDEX('this is a string', ' ', 2); -- returns = this is;
 
 SELECT SUBSTRING_INDEX('this is a string', ' ', -1); -- returns = string;
 
+SELECT SUBSTRING_INDEX('this is a string', ' ', -2); -- returns = a string;
 
+ -- sound x function
 
+SELECT SOUNDEX('bill'), SOUDEX('bell');  --  B400 for both bill and bell; words that sound alike are indexed together;
 
+SELECT SOUNDEX('ache'), SOUNDEX('ack');  -- A200, A200, same value for both;
 
 
 
