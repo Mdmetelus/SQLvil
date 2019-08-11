@@ -27,3 +27,14 @@ SELECT TRUE || FALSE;  -- retuns true, 1;
 SELECT TRUE OR FALSE;  -- retuns true, 1;
 
 SELECT CONCAT('string1', 'string2');
+
+-- QUOTES
+
+SELECT 'this is a string';
+
+SELECT "this is a string";
+
+USE scratch;
+
+SELECT "name", "address" FROM customer;  -- returns, name address;
+
