@@ -225,4 +225,20 @@ SELECT UPPER(name) FROM customer;
 
 SELECT UCASE(name) FROM customer;
 
+SELECT LOWER(name) FROM customer;
+
+SELECT LCASE(name) FROM customer;
+
+SELECT CONCAT(UPPER(SUBSTRING(name,1,1)),LOWER(SUBSTRING(name,2))) FROM customer;
+
+ -- substrings
+
+SELECT SUBSTRING('this is a string', 6); -- returns = is a string;it starts at 1 not zero
+
+SELECT SUBSTR('thisis a string', 6, 4);  -- returns 4 characters beginning with the 6th character.;
+
+
+
+
+
 
