@@ -235,7 +235,16 @@ SELECT CONCAT(UPPER(SUBSTRING(name,1,1)),LOWER(SUBSTRING(name,2))) FROM customer
 
 SELECT SUBSTRING('this is a string', 6); -- returns = is a string;it starts at 1 not zero
 
-SELECT SUBSTR('thisis a string', 6, 4);  -- returns 4 characters beginning with the 6th character.;
+SELECT SUBSTR('this is a string', 6, 4);  -- returns 4 characters beginning with the 6th character.;
+
+SELECT SUBSTR('this is a string', -6); -- the last 6 characters in the string;
+
+SELECT SUBSTRING_INDEX('this is a string', ' ', 1); -- returns = this;
+
+SELECT SUBSTRING_INDEX('this is a string', ' ', 2); -- returns = this is;
+
+SELECT SUBSTRING_INDEX('this is a string', ' ', -1); -- returns = string;
+
 
 
 
