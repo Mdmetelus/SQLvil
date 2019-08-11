@@ -199,6 +199,14 @@ SELECT * FROM customer WHERE name LIKE '  BILL  SMITH  '; --  no reults;
 
 SELECT * FROM customer WHERE name LIKE TRIM( '    Bill Smith    '); -- removes empty spaces from bothe the front and back of a string;
 
+SELECT TRIM('  Bill Smith  ');
+
+SELECT '   Bill Smith  ';
+
+SELECT CONCAT(':', '   Bill Smith   ');
+
+SELECT CONCAT(':', TRIM('   Bill Smith   '), ':');
+
 
 
 
