@@ -257,3 +257,16 @@ SELECT SOUNDEX('acting'), SOUNDEX('action');  -- A2352, A2035, not the same valu
 
 SELECT SUBSTR(SOUNDEX('actng'), 1, 4), SUBSTR(SOUNDEX('action'), 1, 4);   -- A235, A235, same value for both;
 
+SELECT 'bill' SOUNDS LIKE 'boil', 'bill' SOUNDS LIKE 'phil';
+
+ ---
+
+ SELECT ABS(-47); -- returns 47
+
+ SELECT ABSS(-47.73);  -- 47.73;
+
+ SELECT CEILING(12.2); --  returns 13;
+
+ SELECT CEIL(12.3);  -- same as ceiling csil is an alias;
+
+ 
