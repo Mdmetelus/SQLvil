@@ -36,5 +36,12 @@ SELECT "this is a string";
 
 USE scratch;
 
-SELECT "name", "address" FROM customer;  -- returns, name address;
+SELECT "name", "address" FROM customer;  -- double quotes are litteral strings; returns, name address;
 
+SELECT `name`, `address` FROM customer; -- returns the name data and address data from the customer table;
+
+SELECT `name`, `phone` FROM customer;
+
+--
+
+SELECT 47 / 3;  -- returns 15.6667;
