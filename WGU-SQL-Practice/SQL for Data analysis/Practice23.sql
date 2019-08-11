@@ -253,5 +253,7 @@ SELECT SOUNDEX('bill'), SOUDEX('bell');  --  B400 for both bill and bell; words 
 
 SELECT SOUNDEX('ache'), SOUNDEX('ack');  -- A200, A200, same value for both;
 
+SELECT SOUNDEX('acting'), SOUNDEX('action');  -- A2352, A2035, not the same value, ;
 
+SELECT SUBSTR(SOUNDEX('actng'), 1, 4), SUBSTR(SOUNDEX('action'), 1, 4);   -- A235, A235, same value for both;
 
