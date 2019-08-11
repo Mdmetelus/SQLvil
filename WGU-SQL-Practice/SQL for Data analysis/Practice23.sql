@@ -205,9 +205,14 @@ SELECT '   Bill Smith  ';
 
 SELECT CONCAT(':', '   Bill Smith   ');
 
-SELECT CONCAT(':', TRIM('   Bill Smith   '), ':');
+SELECT CONCAT(':', TRIM('   Bill Smith   '), ':'); -- eliminaes the spaces
 
+SELECT CONCAT(':', LTRIM('   Bill Smith   '), ':');
 
+SELECT CONCAT(':'TRIM('x' FROM 'xxxBill Smithxxxx'), ':'); -- eliminates the x's only, and specifically.
 
+SELECT LPAD('Price', 20, '.');
+
+SELECT RPAD('Price', 20, '.');
 
 
