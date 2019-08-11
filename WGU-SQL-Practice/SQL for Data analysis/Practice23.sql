@@ -289,3 +289,9 @@ SELECT PI() + 0.000000000000000;  -- returns 3.141592653589793;
 
 SELECT POWER(8, 2); -- 8^2 = 64; returned 64;
 
+SELECT POW(8, 2); -- 64;
+
+SELECT SQRT(64); -- 8;
+
+SELECT POWER(4096, 1/4); -- the 4th root of 4096 is 8;
+
