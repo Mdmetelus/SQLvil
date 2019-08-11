@@ -13,3 +13,13 @@ SELECT LOG10(100);  -- 2, base10;
 SELECT EXP(1);
 
 SELECT EXP(4); -- 54.598150033144
+
+SELECT DEGREES(PI()); -- 180;
+
+SELECT RADIANS(180); -- will be pi, 3.14159265358;
+
+--
+
+SELECT 'string1' || 'string2';  -- returns, 0;
+
+SELECT
