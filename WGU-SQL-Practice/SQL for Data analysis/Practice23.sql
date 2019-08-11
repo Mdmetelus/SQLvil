@@ -261,18 +261,31 @@ SELECT 'bill' SOUNDS LIKE 'boil', 'bill' SOUNDS LIKE 'phil';
 
  ---
 
- SELECT ABS(-47); -- returns 47
+SELECT ABS(-47); -- returns 47
 
- SELECT ABSS(-47.73);  -- 47.73;
+SELECT ABS(-47.73);  -- 47.73;
 
- SELECT CEILING(12.2); --  returns 13;
+SELECT CEILING(12.2); --  returns 13;
 
- SELECT CEIL(12.3);  -- same as ceiling csil is an alias;
+SELECT CEIL(12.3);  -- same as ceiling csil is an alias;
 
- SELECT FLOOR(12.9); -- retturn 12; rounds down;
+SELECT FLOOR(12.9); -- retturn 12; rounds down;
 
- SELECT ROUND(17.5);  -- retuns 18; rounds up;
+SELECT ROUND(17.5);  -- retuns 18; rounds up;
 
- SELECT ROUND(17.4);  --  rounds down to 17;
+SELECT ROUND(17.4);  --  rounds down to 17;
 
- 
+SELECT TRUNCATE(42.973, 1);  -- limits to only 1 decimal place and cutsthe rest off; not rounded; 42.9;
+
+SELECT TRUNCATE(65.9876, 2); --  returns 65.98;
+
+SELECT TRUNCATE(99942.973, -2); -- truncates to the left of the decimal and substitutes 0 for truncated numbers.
+
+-- simplt functions
+
+SELECT PI(); -- returns 3.141593
+
+SELECT PI() + 0.000000000000000;  -- returns 3.141592653589793;
+
+SELECT POWER(8, 2); -- 8^2 = 64; returned 64;
+
