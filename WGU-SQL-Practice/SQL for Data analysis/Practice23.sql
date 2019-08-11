@@ -211,8 +211,18 @@ SELECT CONCAT(':', LTRIM('   Bill Smith   '), ':');
 
 SELECT CONCAT(':'TRIM('x' FROM 'xxxBill Smithxxxx'), ':'); -- eliminates the x's only, and specifically.
 
-SELECT LPAD('Price', 20, '.');
+SELECT LPAD('Price', 20, '.'); -- adds 20 '.' to the left side of price
 
-SELECT RPAD('Price', 20, '.');
+SELECT RPAD('Price', 20, '.'); -- adds 20 '.' to the right side of price
+
+SELECT LPAD('Price', 10, '.'); 
+
+SELECT RPAD('Price', 10, '.'); 
+
+USE scratch;
+
+SELECT UPPER(name) FROM customer;
+
+SELECT UCASE(name) FROM customer;
 
 
