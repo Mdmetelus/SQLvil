@@ -20,6 +20,10 @@ SELECT RADIANS(180); -- will be pi, 3.14159265358;
 
 --
 
-SELECT 'string1' || 'string2';  -- returns, 0;
+SELECT 'string1' || 'string2';  -- returns false, 0;
 
-SELECT
+SELECT TRUE || FALSE;  -- retuns true, 1;
+
+SELECT TRUE OR FALSE;  -- retuns true, 1;
+
+SELECT CONCAT('string1', 'string2');
