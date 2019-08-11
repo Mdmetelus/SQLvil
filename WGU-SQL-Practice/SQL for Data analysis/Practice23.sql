@@ -269,4 +269,10 @@ SELECT 'bill' SOUNDS LIKE 'boil', 'bill' SOUNDS LIKE 'phil';
 
  SELECT CEIL(12.3);  -- same as ceiling csil is an alias;
 
+ SELECT FLOOR(12.9); -- retturn 12; rounds down;
+
+ SELECT ROUND(17.5);  -- retuns 18; rounds up;
+
+ SELECT ROUND(17.4);  --  rounds down to 17;
+
  
