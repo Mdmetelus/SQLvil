@@ -58,5 +58,18 @@ SELECT 47 % 3; -- this will work too;
 
 -- STANDARAD SQL COMMENTS;
 
+/*STANDARD SQL COMMENT IN THE C TYLE ALSO WORKS FINE*/
+
+/*
+
+THIS  WORKS IN THE NULTILINE STYLE AS WELL.
+
+*/
+
 SELECT 'foo';
 
+/*!
+
+SELECT 'MY\ySQL executeable comment' AS 'Say What?!'
+
+*/;
