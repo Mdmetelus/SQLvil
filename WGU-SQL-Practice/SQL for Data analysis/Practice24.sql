@@ -73,3 +73,7 @@ SELECT 'foo';
 SELECT 'MY\ySQL executeable comment' AS 'Say What?!'
 
 */;
+
+SELECT 1;
+
+SELECT 1 /*! + 2 */; -- In my sql result will be 3 but in other database languages they will be only 1;
