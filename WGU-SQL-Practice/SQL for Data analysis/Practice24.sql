@@ -45,3 +45,18 @@ SELECT `name`, `phone` FROM customer;
 --
 
 SELECT 47 / 3;  -- returns 15.6667;
+
+SELECT DIV(47, 3); -- error in syntax;
+
+SELECT 47 DIV 3;  -- correct method for integer division;
+
+SELECT 47 MOD 3;  -- this give you the remainder of a division;
+
+SELECT MOD(47, 3); -- will work for mod n this ;
+
+SELECT 47 % 3; -- this will work too;
+
+-- STANDARAD SQL COMMENTS;
+
+SELECT 'foo';
+
