@@ -44,3 +44,52 @@ WHERE PRODUCT.V_CODE = VENDOR.V_CODE;
 
 SELECT P_DESCRIPT, P_QOH, P_PRICE, P_QOH*P_PRICE 
 FROM PRODUCT;
+
+UPDATE uc_pizzaorder
+SET OrderQty = 10
+WHERE PizzaOrderID = 1;
+
+-- Write your query here
+DELETE FROM test1 WHERE id = 35 OR id = 23;
+
+-- Write your query here
+INSERT INTO garage (make, model, year) VALUES ('Chevrolet', 'Camaro', 1971);
+
+-- Write your query here
+SELECT * FROM for_sale;
+
+UPDATE for_sale SET price = 50000 WHERE price IS NULL;
+
+SELECT * FROM for_sale;
+
+UPDATE for_sale SET price = 50000;
+
+-- Write your query here
+DELETE FROM garage WHERE make = 'Ferrari';
+
+-- Write your query here
+UPDATE for_sale SET price = 40000 WHERE model = 'Camaro';
+SELECT * from for_sale;
+
+-- Write your query here
+SELECT * FROM widgets;
+
+INSERT INTO widgets (num_sold, customer, paid_amt) VALUES ( 3, 'Mary Wills', 33.33);
+SELECT * FROM widgets;
+
+SELECT building_name, monthly_rent FROM Buildings;
+
+
+ALTER TABLE table1 DELETE column2;
+SELECT * FROM 
+
+-- Write your query here
+ALTER TABLE Things DROP color;
+SELECT * FROM Things;
+
+-- Write your query here
+-- ALTER TABLE Pass_keys MODIFY pass_key blob NOT NULL;
+
+DESCRIBE Pass_keys;
+ALTER TABLE Pass_keys modify pass_key blob NOT NULL;
+DESCRIBE Pass_keys;
